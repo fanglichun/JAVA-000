@@ -2,6 +2,7 @@ package com.flc.jvm;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -27,8 +28,7 @@ public class HelloClassLoader extends ClassLoader {
         byte[] bytes = new byte[length];
         try {
             new FileInputStream(file).read(bytes);
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException e) {
             return super.findClass(name);
         }
         for (int i = 0; i < length; i++) {
