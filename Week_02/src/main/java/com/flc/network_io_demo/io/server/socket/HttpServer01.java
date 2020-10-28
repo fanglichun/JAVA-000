@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class HttpServer01 {
     public static void main(String[] args) throws IOException{
-        ServerSocket serverSocket = new ServerSocket(8801);
+        ServerSocket serverSocket = new ServerSocket(8808);
         while (true) {
             try {
                 Socket socket = serverSocket.accept();
@@ -26,6 +26,8 @@ public class HttpServer01 {
             printWriter.println("Content-Type:text/html;charset=utf-8");
             printWriter.println();
             printWriter.write("hello,nio");
+            printWriter.flush();
+            socket.shutdownOutput();
             printWriter.close();
             socket.close();
         } catch (IOException | InterruptedException e) {
