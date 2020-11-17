@@ -1,5 +1,7 @@
-package com.flc.customstarter;
+package com.flc.bean;
 
+
+import lombok.Data;
 
 import java.util.List;
 

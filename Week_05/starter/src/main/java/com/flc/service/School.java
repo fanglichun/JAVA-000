@@ -1,24 +1,21 @@
-package com.flc.customstarter;
+package com.flc.service;
 
-
+import com.flc.aop.ISchool;
+import com.flc.bean.Klass;
+import com.flc.bean.Student;
 
 import javax.annotation.Resource;
 
-@Data
 public class School implements ISchool {
     
-    // Resource 
-    @Autowired(required = true) //primary
-    Klass class1;
+    @Resource
+    private Klass class1;
     
-    @Resource(name = "student100")
-    Student student100;
+    @Resource
+    private Student student100;
     
-    @Override
     public void ding(){
-    
         System.out.println("Class1 have " + this.class1.getStudents().size() + " students and one is " + this.student100);
-        
     }
     
 }

@@ -116,3 +116,6 @@ public enum EnumSingleton {
 
 ### 基于枚举类型的单例实现。这种实现方式通过 Java 枚举类型本身的特性，保证了实例创建的线程安全性和实例的唯一性
 
+# （必做）给前面课程提供的Student/Klass/School实现自动配置和Starter。
+遇到一个坑，starter里面的配置文件的格式若是properties,maven引入这个starter的话，若是你要覆盖里面的值的话，
+当前这个maven项目或者module里面配置文件格式也应该是properties,否则会无法覆盖值，同理yaml格式也是一样
