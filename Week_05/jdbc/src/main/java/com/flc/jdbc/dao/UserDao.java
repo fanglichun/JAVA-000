@@ -2,8 +2,10 @@ package com.flc.jdbc.dao;
 
 import com.flc.bean.User;
 import com.flc.jdbc.utils.JDBCUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +17,9 @@ import java.util.List;
  */
 @Repository
 public class UserDao {
+
+    @Autowired
+    private DataSource dataSource;
 
     public List<User> findAll() {
         String sql = "select id,code,name from user";
@@ -54,7 +59,7 @@ public class UserDao {
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {
-                JDBCUtil.release(rs, stmt, conn);
+                JDBCUtil.release(stmt, conn);
             }
         }
         return result;
@@ -93,6 +98,7 @@ public class UserDao {
                 ps.setString(2, user.getName());
                 ps.setInt(3, user.getId());
                 result = ps.executeUpdate();
+//                ps.executeUpdate();
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {
@@ -100,5 +106,34 @@ public class UserDao {
             }
         }
         return result;
+    }
+
+    public List<User> selectAll() {
+        Connection conn = null;
+        Statement statement = null;
+        ResultSet rs = null;
+        List<User> userList = new ArrayList<User>();
+        try {
+            //创建connection
+            conn = dataSource.getConnection();
+            statement = conn.createStatement();
+            //执行sql
+            rs = statement.executeQuery("select id,code,name from user limit 10");
+            //取数据
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String code = rs.getString("code");
+                String name = rs.getString("name");
+                userList.add(User.builder().id(id).code(code).name(name).build());
+            }
+            if (rs.next()) {
+                System.out.println(rs.getString("s"));
+            }
+            //关闭connection
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return userList;
     }
 }

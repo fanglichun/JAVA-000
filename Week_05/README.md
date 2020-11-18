@@ -119,3 +119,10 @@ public enum EnumSingleton {
 # （必做）给前面课程提供的Student/Klass/School实现自动配置和Starter。
 遇到一个坑，starter里面的配置文件的格式若是properties,maven引入这个starter的话，若是你要覆盖里面的值的话，
 当前这个maven项目或者module里面配置文件格式也应该是properties,否则会无法覆盖值，同理yaml格式也是一样
+
+# （必做）研究一下JDBC接口和数据库连接池，掌握它们的设计和用法：
+1）使用JDBC原生接口，实现数据库的增删改查操作。
+2）使用事务，PrepareStatement方式，批处理方式，改进上述操作。
+3）配置Hikari连接池，改进上述操作。提交代码到Github。
+见JdbcApplicationTests和UserDao。
+# （必做）写代码实现Spring Bean的装配，方式越多越好（XML、Annotation都可以）,提交到Github。
