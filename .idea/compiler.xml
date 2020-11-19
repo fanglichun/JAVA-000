@@ -8,10 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="network_io" />
         <module name="http_demo" />
+        <module name="jdbc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="http_demo" target="1.8" />
+      <module name="jdbc" target="1.5" />
       <module name="network_io" target="8" />
     </bytecodeTargetLevel>
   </component>
