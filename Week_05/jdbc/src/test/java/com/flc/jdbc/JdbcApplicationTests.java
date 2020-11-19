@@ -16,17 +16,18 @@ class JdbcApplicationTests {
 
     @Test
     void contextLoads() {
-//        jdbc();
+        jdbc();
         hikariData();
     }
 
     private void jdbc() {
+        userDao.deleteAll();
         List<User> users = userDao.findAll();
         System.out.println(users);
         userDao.insert(User.builder().id(1).code("12345").name("flc").build());
         List<User> users1 = userDao.findAll();
         System.out.println(users1);
-        userDao.update(User.builder().id(1).code("20103259").name("fanglc").build());
+        userDao.update(User.builder().id(2).code("20103259").name("fanglc").build());
         List<User> users2 = userDao.findAll();
         System.out.println(users2);
         userDao.deleteAll();
