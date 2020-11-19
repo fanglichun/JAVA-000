@@ -1,7 +1,5 @@
 package com.flc.bean;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 /**
  * @creator fanglc@anch.net
  * @createdTime 2020/11/18 20:18
