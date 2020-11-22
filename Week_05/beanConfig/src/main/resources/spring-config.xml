@@ -12,11 +12,18 @@
     </bean>
 
     <bean id="stu2" class="com.flc.bean.Student" primary="true">
-        <property name="sName">
-            <value>michael</value>
-        </property>
-        <property name="sNo">
-            <value>20103259</value>
+        <property name="sName" value="michael"/>
+        <property name="sNo" value="20103259"/>
+    </bean>
+
+    <bean id="kClass" class="com.flc.bean.Class">
+        <property name="classNo" value="2010251"/>
+        <property name="className" value="信息安全"/>
+        <property name="classes">
+            <list>
+                <ref bean="stu1"/>
+                <ref bean="stu2"/>
+            </list>
         </property>
     </bean>
 

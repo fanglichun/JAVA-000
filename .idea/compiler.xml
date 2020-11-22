@@ -9,17 +9,19 @@
         <module name="network_io" />
         <module name="http_demo" />
         <module name="jdbc" />
+        <module name="beanConfig" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="http_demo" target="1.8" />
+      <module name="beanConfig" target="8" />
+      <module name="http_demo" target="8" />
       <module name="jdbc" target="1.5" />
       <module name="network_io" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="http_demo" options="-parameters" />
+      <module name="http_demo" options="" />
       <module name="network_io" options="" />
     </option>
   </component>
