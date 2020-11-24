@@ -22,5 +22,8 @@ public class XMLAutowiredApp {
         Object stu2 = beanFactory.getBean("stu1");
         System.out.println(stu2);
         System.out.println(stu1.equals(stu2));
+        Object kClass = beanFactory.getBean("kClass");
+        System.out.println(kClass);
+
     }
 }
