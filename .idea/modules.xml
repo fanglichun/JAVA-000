@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Week_05/starter/fanglc-spring-boot-starter.iml" filepath="$PROJECT_DIR$/Week_05/starter/fanglc-spring-boot-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_02/http_demo.iml" filepath="$PROJECT_DIR$/Week_02/http_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java.iml" filepath="$PROJECT_DIR$/.idea/java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_05/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/Week_05/jdbc/jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_02/network_io.iml" filepath="$PROJECT_DIR$/Week_02/network_io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_05/test_starter/starter.iml" filepath="$PROJECT_DIR$/Week_05/test_starter/starter.iml" />
     </modules>
   </component>
 </project>

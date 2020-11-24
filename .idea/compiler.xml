@@ -9,18 +9,23 @@
         <module name="network_io" />
         <module name="http_demo" />
         <module name="jdbc" />
+        <module name="starter" />
+        <module name="fanglc-spring-boot-starter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="fanglc-spring-boot-starter" target="1.5" />
       <module name="http_demo" target="1.8" />
       <module name="jdbc" target="1.5" />
       <module name="network_io" target="8" />
+      <module name="starter" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="http_demo" options="-parameters" />
       <module name="network_io" options="" />
+      <module name="starter" options="-parameters" />
     </option>
   </component>
 </project>
