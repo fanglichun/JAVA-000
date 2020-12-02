@@ -1,20 +1,23 @@
-package com.flc.dms.aop;
+package com.flc.dms.configuration;
 
-import com.flc.dms.utils.DynamicDataSourceContextHolder;
-import com.flc.dms.annotation.TargetDataSource;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 /**
- * @creator fanglc@anch.net
- * @createdTime 2020/12/2 18:42
- * @desc
+ * Multiple DataSource Aspect
+ *
+ * @author HelloWood
+ * @date 2017-08-15 11:37
+ * @email hellowoodes@gmail.com
  */
+@Aspect
+@Component
 public class DynamicDataSourceAspect {
-
     private static final Logger logger = LoggerFactory.getLogger(DynamicDataSourceAspect.class);
 
     /**
@@ -26,7 +29,7 @@ public class DynamicDataSourceAspect {
     @Before("@annotation(targetDataSource))")
     public void switchDataSource(JoinPoint point, TargetDataSource targetDataSource) {
         if (!DynamicDataSourceContextHolder.containDataSourceKey(targetDataSource.value())) {
-            logger.error("DataSource [{}] doesn't exist, use default DataSource [{}]", targetDataSource, targetDataSource.value());
+            logger.error("DataSource [{}] doesn't exist, use default DataSource [{}]", targetDataSource.value());
         } else {
             DynamicDataSourceContextHolder.setDataSourceKey(targetDataSource.value());
             logger.info("Switch DataSource to [{}] in Method [{}]",
@@ -46,4 +49,5 @@ public class DynamicDataSourceAspect {
         logger.info("Restore DataSource to [{}] in Method [{}]",
                 DynamicDataSourceContextHolder.getDataSourceKey(), point.getSignature());
     }
+
 }

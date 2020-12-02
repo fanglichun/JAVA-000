@@ -1,14 +1,19 @@
-package com.flc.dms.utils;
+package com.flc.dms.configuration;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @creator fanglc@anch.net
- * @createdTime 2020/12/2 18:37
- * @desc
+ * Multiple DataSource Context Holder
+ *
+ * @author HelloWood
+ * @date 2017 -08-15 14:26
+ * @Email hellowoodes @gmail.com
  */
 public class DynamicDataSourceContextHolder {
+
+//    private static final Logger logger = LoggerFactory.getLogger(DynamicDataSourceContextHolder.class);
 
     /**
      * Maintain variable for every thread, to avoid effect other thread

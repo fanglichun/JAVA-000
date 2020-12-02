@@ -1,7 +1,6 @@
-package com.flc.dms.config;
+package com.flc.dms.configuration;
 
-import com.flc.dms.utils.DynamicDataSourceContextHolder;
-import com.flc.dms.utils.DynamicRoutingDataSource;
+import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -9,16 +8,17 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
-import org.mybatis.spring.SqlSessionFactoryBean;
 
 import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @creator fanglc@anch.net
- * @createdTime 2020/12/2 18:38
- * @desc
+ * Multiple DataSource Configurer
+ *
+ * @author HelloWood
+ * @date 2017 -08-15 11:37
+ * @Email hellowoodes @gmail.com
  */
 @Configuration
 public class DataSourceConfigurer {
@@ -99,3 +99,4 @@ public class DataSourceConfigurer {
         return new DataSourceTransactionManager(dynamicDataSource());
     }
 }
+

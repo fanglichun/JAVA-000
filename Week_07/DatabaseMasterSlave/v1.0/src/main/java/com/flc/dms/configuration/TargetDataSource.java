@@ -1,13 +1,14 @@
-package com.flc.dms.annotation;
+package com.flc.dms.configuration;
 
 import java.lang.annotation.*;
 
 /**
- * @creator fanglc@anch.net
- * @createdTime 2020/12/2 18:44
- * @desc
+ * Multiple DataSource Aspect For Switch DataSource
+ *
+ * @author HelloWood
+ * @date 2017-08-15 14:36
+ * @Email hellowoodes@gmail.com
  */
-
 @Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented

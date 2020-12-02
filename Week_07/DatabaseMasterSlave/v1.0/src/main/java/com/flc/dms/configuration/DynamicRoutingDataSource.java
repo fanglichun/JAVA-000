@@ -1,14 +1,17 @@
-package com.flc.dms.utils;
+package com.flc.dms.configuration;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
 /**
- * @creator fanglc@anch.net
- * @createdTime 2020/12/2 18:40
- * @desc
+ * Multiple DataSource Configurer
+ *
+ * @author HelloWood
+ * @date 2017-08-15 11:37
+ * @Email hellowoodes@gmail.com
  */
+
 public class DynamicRoutingDataSource extends AbstractRoutingDataSource {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
@@ -23,5 +26,4 @@ public class DynamicRoutingDataSource extends AbstractRoutingDataSource {
         logger.info("Current DataSource is [{}]", DynamicDataSourceContextHolder.getDataSourceKey());
         return DynamicDataSourceContextHolder.getDataSourceKey();
     }
-
 }
