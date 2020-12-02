@@ -7,6 +7,12 @@
         <option value="$PROJECT_DIR$/Week_05/jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/Week_05/test_starter/pom.xml" />
         <option value="$PROJECT_DIR$/Week_05/starter/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_06/EB/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_06/lambda_stream_guava/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v3.0/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/pom.xml" />
       </list>
     </option>
   </component>

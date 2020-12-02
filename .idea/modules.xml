@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Week_06/EB/EB.iml" filepath="$PROJECT_DIR$/Week_06/EB/EB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/dms.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/dms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/dms1.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/dms1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_05/starter/fanglc-spring-boot-starter.iml" filepath="$PROJECT_DIR$/Week_05/starter/fanglc-spring-boot-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_02/http_demo.iml" filepath="$PROJECT_DIR$/Week_02/http_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java.iml" filepath="$PROJECT_DIR$/.idea/java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_05/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/Week_05/jdbc/jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_06/lambda_stream_guava/lambda_stream_guava.iml" filepath="$PROJECT_DIR$/Week_06/lambda_stream_guava/lambda_stream_guava.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_02/network_io.iml" filepath="$PROJECT_DIR$/Week_02/network_io.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_05/test_starter/starter.iml" filepath="$PROJECT_DIR$/Week_05/test_starter/starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/v1.0.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/v1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/v2.0.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/v2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v3.0/v3.0.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v3.0/v3.0.iml" />
     </modules>
   </component>
 </project>

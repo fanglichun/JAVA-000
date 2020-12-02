@@ -2,30 +2,46 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="starter" />
+        <module name="v2.0" />
         <module name="network_io" />
+        <module name="v3.0" />
         <module name="http_demo" />
         <module name="jdbc" />
-        <module name="starter" />
+        <module name="v1.0" />
+        <module name="dms" />
         <module name="fanglc-spring-boot-starter" />
+        <module name="EB" />
+        <module name="lambda_stream_guava" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dms" target="8" />
+      <module name="dms1" target="1.8" />
+      <module name="EB" target="1.5" />
       <module name="fanglc-spring-boot-starter" target="1.5" />
       <module name="http_demo" target="1.8" />
       <module name="jdbc" target="1.5" />
+      <module name="lambda_stream_guava" target="8" />
       <module name="network_io" target="8" />
       <module name="starter" target="1.8" />
+      <module name="v1.0" target="1.8" />
+      <module name="v2.0" target="1.5" />
+      <module name="v3.0" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dms1" options="-parameters" />
       <module name="http_demo" options="-parameters" />
       <module name="network_io" options="" />
       <module name="starter" options="-parameters" />
+      <module name="v1.0" options="-parameters" />
     </option>
   </component>
 </project>
