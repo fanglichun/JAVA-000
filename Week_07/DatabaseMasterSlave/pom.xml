@@ -11,7 +11,7 @@
 	<groupId>com.flc</groupId>
 	<artifactId>dms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dms1</name>
+	<name>dms</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging>pom</packaging>
 
