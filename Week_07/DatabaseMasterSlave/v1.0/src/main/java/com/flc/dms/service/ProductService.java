@@ -1,6 +1,6 @@
 package com.flc.dms.service;
 
-import com.flc.dms.mapper.ProductDao;
+import com.flc.dms.mapper.ProductMapper;
 import com.flc.dms.modal.Product;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,7 +14,7 @@ import java.util.List;
 public class ProductService {
 
     @Resource
-    private ProductDao productDao;
+    private ProductMapper productDao;
 
     /**
      * Get product by id

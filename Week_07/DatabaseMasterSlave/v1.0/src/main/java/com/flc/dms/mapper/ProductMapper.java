@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 @Mapper
-public interface ProductDao {
+public interface ProductMapper {
     Product select(@Param("id") long id);
 
     Integer update(Product product);
