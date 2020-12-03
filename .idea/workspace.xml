@@ -9,19 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97a194e6-7790-4492-b4b0-ff50c13ed1f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/enums/DataSourceKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/DynamicDataSourceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/DynamicDataSourceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/configuration/DataSourceConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/configuration/DataSourceConfigurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/configuration/DynamicDataSourceAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/configuration/DynamicDataSourceAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/configuration/DynamicDataSourceContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/configuration/DynamicDataSourceContextHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/configuration/DynamicRoutingDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/configuration/DynamicRoutingDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/configuration/TargetDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/annotation/TargetDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/controller/ProduceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/controller/ProduceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources/com/flc/dms/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources/com/flc/dms/dao/ProductDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +64,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/configuration" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -103,8 +92,8 @@
       <recent name="singleton" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0\src\main\java\com\flc\dms\configuration" />
       <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0\src\main\resources" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0\src\main\java\com\flc\dms\configuration" />
       <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0" />
       <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0\src\main\resources\com\flc\dms\mapper" />
       <recent name="D:\java_training_camp\JAVA-000\Week_06" />
@@ -252,7 +241,7 @@
       <workItem from="1606918357387" duration="12350000" />
       <workItem from="1606962188392" duration="5186000" />
       <workItem from="1606973874757" duration="820000" />
-      <workItem from="1606974786741" duration="6397000" />
+      <workItem from="1606974786741" duration="6702000" />
     </task>
     <task id="LOCAL-00001" summary="导入idea删除无用的文件">
       <created>1602403256486</created>
@@ -387,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606960263067</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="主备数据源切换V1版本-添加轮询选择slave">
+      <created>1606981310340</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1606981310340</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +455,8 @@
     <MESSAGE value="主备数据源切换。" />
     <MESSAGE value="主备数据源切换V1版本提交" />
     <MESSAGE value="主备数据源切换V1版本-测试提交。" />
-    <option name="LAST_COMMIT_MESSAGE" value="主备数据源切换V1版本-测试提交。" />
+    <MESSAGE value="主备数据源切换V1版本-添加轮询选择slave" />
+    <option name="LAST_COMMIT_MESSAGE" value="主备数据源切换V1版本-添加轮询选择slave" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1605596817885">
@@ -510,10 +507,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="385" y="183" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1605095289740" />
-    <state x="-87" y="0" key="CommitChangelistDialog2" timestamp="1606960262381">
+    <state x="185" y="0" key="CommitChangelistDialog2" timestamp="1606981309542">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="-87" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1606960262381" />
+    <state x="185" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1606981309542" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1606978297647">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -602,10 +599,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="417" y="37" width="863" height="605" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1606904342488" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1606960264594">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1606981311902">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606960264594" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606981311902" />
     <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605522033270">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
