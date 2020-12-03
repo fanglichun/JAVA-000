@@ -7,20 +7,22 @@ import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 
 @Aspect
+@Order(0)
 @Component
 public class DynamicDataSourceAspect {
     private static final Logger logger = LoggerFactory.getLogger(DynamicDataSourceAspect.class);
 
-    private final String[] QUERY_PREFIX = {"select", "get", "query","find"};
+    private final String[] QUERY_PREFIX = {"select"};
 
     /**
      * Dao aspect.
      */
-    @Pointcut("execution(* com.flc.dms.dao..*.*(..))")
+    @Pointcut("execution(* com.flc.dms.service..*.*(..))")
     public void daoAspect() {
     }
 

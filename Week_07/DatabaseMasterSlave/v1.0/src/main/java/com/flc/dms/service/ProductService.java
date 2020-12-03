@@ -35,6 +35,15 @@ public class ProductService {
     }
 
     /**
+     * Get all product
+     *
+     * @return
+     */
+    public List<Product> getAllProduct() {
+        return productDao.getAllProduct();
+    }
+
+    /**
      * Update product by id
      * If update failed will throw Exception
      *
@@ -82,14 +91,5 @@ public class ProductService {
             throw new Exception("Delete product:" + productId + "failed");
         }
         return true;
-    }
-
-    /**
-     * Get all product
-     *
-     * @return
-     */
-    public List<Product> getAllProduct() {
-        return productDao.getAllProduct();
     }
 }
