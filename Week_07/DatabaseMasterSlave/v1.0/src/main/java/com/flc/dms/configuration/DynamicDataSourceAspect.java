@@ -4,50 +4,69 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-/**
- * Multiple DataSource Aspect
- *
- * @author HelloWood
- * @date 2017-08-15 11:37
- * @email hellowoodes@gmail.com
- */
+
 @Aspect
 @Component
 public class DynamicDataSourceAspect {
     private static final Logger logger = LoggerFactory.getLogger(DynamicDataSourceAspect.class);
 
+    private final String[] QUERY_PREFIX = {"select", "get", "query","find"};
+
+    /**
+     * Dao aspect.
+     */
+    @Pointcut("execution(* com.flc.dms.dao..*.*(..))")
+    public void daoAspect() {
+    }
+
     /**
      * Switch DataSource
      *
-     * @param point
-     * @param targetDataSource
+     * @param point the point
      */
-    @Before("@annotation(targetDataSource))")
-    public void switchDataSource(JoinPoint point, TargetDataSource targetDataSource) {
-        if (!DynamicDataSourceContextHolder.containDataSourceKey(targetDataSource.value())) {
-            logger.error("DataSource [{}] doesn't exist, use default DataSource [{}]", targetDataSource.value());
-        } else {
-            DynamicDataSourceContextHolder.setDataSourceKey(targetDataSource.value());
+    @Before("daoAspect()")
+    public void switchDataSource(JoinPoint point) {
+        Boolean isQueryMethod = isQueryMethod(point.getSignature().getName());
+        if (isQueryMethod) {
+            DynamicDataSourceContextHolder.useSlaveDataSource();
             logger.info("Switch DataSource to [{}] in Method [{}]",
                     DynamicDataSourceContextHolder.getDataSourceKey(), point.getSignature());
+        } else {
+            DynamicDataSourceContextHolder.useMasterDataSource();
         }
     }
 
     /**
      * Restore DataSource
      *
-     * @param point
-     * @param targetDataSource
+     * @param point the point
      */
-    @After("@annotation(targetDataSource))")
-    public void restoreDataSource(JoinPoint point, TargetDataSource targetDataSource) {
+    @After("daoAspect())")
+    public void restoreDataSource(JoinPoint point) {
         DynamicDataSourceContextHolder.clearDataSourceKey();
         logger.info("Restore DataSource to [{}] in Method [{}]",
                 DynamicDataSourceContextHolder.getDataSourceKey(), point.getSignature());
+    }
+
+
+    /**
+     * Judge if method start with query prefix
+     *
+     * @param methodName 方法名称
+     * @return true or false
+     */
+    private Boolean isQueryMethod(String methodName) {
+        for (String prefix : QUERY_PREFIX) {
+            if (methodName.startsWith(prefix)) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }

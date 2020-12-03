@@ -1,7 +1,7 @@
 package com.flc.dms.configuration;
 
+import com.flc.dms.enums.DataSourceKey;
 import org.mybatis.spring.SqlSessionFactoryBean;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -14,13 +14,7 @@ import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Multiple DataSource Configurer
- *
- * @author HelloWood
- * @date 2017 -08-15 11:37
- * @Email hellowoodes @gmail.com
- */
+
 @Configuration
 public class DataSourceConfigurer {
 
@@ -37,13 +31,35 @@ public class DataSourceConfigurer {
     }
 
     /**
-     * slave DataSource
+     * Slave alpha data source.
      *
-     * @return data source
+     * @return the data source
      */
-    @Bean("slave")
-    @ConfigurationProperties(prefix = "application.server.db.slave")
-    public DataSource slave() {
+    @Bean("slaveAlpha")
+    @ConfigurationProperties(prefix = "application.server.db.slave-alpha")
+    public DataSource slaveAlpha() {
+        return DataSourceBuilder.create().build();
+    }
+
+    /**
+     * Slave beta data source.
+     *
+     * @return the data source
+     */
+    @Bean("slaveBeta")
+    @ConfigurationProperties(prefix = "application.server.db.slave-beta")
+    public DataSource slaveBeta() {
+        return DataSourceBuilder.create().build();
+    }
+
+    /**
+     * Slave gamma data source.
+     *
+     * @return the data source
+     */
+    @Bean("slaveGamma")
+    @ConfigurationProperties(prefix = "application.server.db.slave-gamma")
+    public DataSource slaveGamma() {
         return DataSourceBuilder.create().build();
     }
 
@@ -55,10 +71,11 @@ public class DataSourceConfigurer {
     @Bean("dynamicDataSource")
     public DataSource dynamicDataSource() {
         DynamicRoutingDataSource dynamicRoutingDataSource = new DynamicRoutingDataSource();
-        Map<Object, Object> dataSourceMap = new HashMap<>(2);
-        dataSourceMap.put("master", master());
-        dataSourceMap.put("slave", slave());
-
+        Map<Object, Object> dataSourceMap = new HashMap<>(4);
+        dataSourceMap.put(DataSourceKey.master.name(), master());
+        dataSourceMap.put(DataSourceKey.slaveAlpha.name(), slaveAlpha());
+        dataSourceMap.put(DataSourceKey.slaveBeta.name(), slaveBeta());
+        dataSourceMap.put(DataSourceKey.slaveGamma.name(), slaveGamma());
         // Set master datasource as default
         dynamicRoutingDataSource.setDefaultTargetDataSource(master());
         // Set master and slave datasource as target datasource
@@ -66,6 +83,10 @@ public class DataSourceConfigurer {
 
         // To put datasource keys into DataSourceContextHolder to judge if the datasource is exist
         DynamicDataSourceContextHolder.dataSourceKeys.addAll(dataSourceMap.keySet());
+
+        // To put slave datasource keys into DataSourceContextHolder to load balance
+        DynamicDataSourceContextHolder.slaveDataSourceKeys.addAll(dataSourceMap.keySet());
+        DynamicDataSourceContextHolder.slaveDataSourceKeys.remove(DataSourceKey.master.name());
         return dynamicRoutingDataSource;
     }
 
@@ -91,7 +112,6 @@ public class DataSourceConfigurer {
 
     /**
      * Transaction manager platform transaction manager.
-     * Here should be config if using Transaction
      *
      * @return the platform transaction manager
      */

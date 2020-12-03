@@ -1,4 +1,4 @@
-package com.flc.dms.configuration;
+package com.flc.dms.annotation;
 
 import java.lang.annotation.*;
 

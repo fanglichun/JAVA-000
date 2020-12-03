@@ -1,4 +1,4 @@
-package com.flc.dms.mapper;
+package com.flc.dms.dao;
 
 import com.flc.dms.modal.Product;
 import org.apache.ibatis.annotations.Mapper;
@@ -7,7 +7,8 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 @Mapper
-public interface ProductMapper {
+public interface ProductDao {
+
     Product select(@Param("id") long id);
 
     Integer update(Product product);
@@ -16,5 +17,5 @@ public interface ProductMapper {
 
     Integer delete(long productId);
 
-    List<Product> selectAll();
+    List<Product> getAllProduct();
 }

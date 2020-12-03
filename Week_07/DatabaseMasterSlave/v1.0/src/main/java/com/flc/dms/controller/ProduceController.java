@@ -1,6 +1,5 @@
 package com.flc.dms.controller;
 
-import com.flc.dms.configuration.TargetDataSource;
 import com.flc.dms.modal.Product;
 import com.flc.dms.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,22 +33,9 @@ public class ProduceController {
      * @return
      * @throws Exception
      */
-    @GetMapping("/master")
-    @TargetDataSource("master")
-    public List<Product> getAllMasterProduct() {
-        return productService.selectAll();
-    }
-
-    /**
-     * Get all product
-     *
-     * @return
-     * @throws Exception
-     */
-    @GetMapping("/slave")
-    @TargetDataSource("slave")
-    public List<Product> getAllSlaveProduct() {
-        return productService.selectAll();
+    @GetMapping
+    public List<Product> getAllProduct() {
+        return productService.getAllProduct();
     }
 
     /**

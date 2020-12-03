@@ -1,29 +1,28 @@
 package com.flc.dms.configuration;
 
 
+import com.flc.dms.enums.DataSourceKey;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
-/**
- * Multiple DataSource Context Holder
- *
- * @author HelloWood
- * @date 2017 -08-15 14:26
- * @Email hellowoodes @gmail.com
- */
 public class DynamicDataSourceContextHolder {
 
-//    private static final Logger logger = LoggerFactory.getLogger(DynamicDataSourceContextHolder.class);
+    private static final Logger logger = LoggerFactory.getLogger(DynamicDataSourceContextHolder.class);
+
+    private static Lock lock = new ReentrantLock();
+
+    private static int counter = 0;
 
     /**
      * Maintain variable for every thread, to avoid effect other thread
      */
-    private static final ThreadLocal<String> contextHolder = new ThreadLocal<String>() {
-        @Override
-        protected String initialValue() {
-            return "master";
-        }
-    };
+    private static final ThreadLocal<String> CONTEXT_HOLDER = ThreadLocal.withInitial(DataSourceKey.master::name);
+
 
     /**
      * All DataSource List
@@ -31,12 +30,44 @@ public class DynamicDataSourceContextHolder {
     public static List<Object> dataSourceKeys = new ArrayList<>();
 
     /**
+     * The constant slaveDataSourceKeys.
+     */
+    public static List<Object> slaveDataSourceKeys = new ArrayList<>();
+
+    /**
      * To switch DataSource
      *
      * @param key the key
      */
     public static void setDataSourceKey(String key) {
-        contextHolder.set(key);
+        CONTEXT_HOLDER.set(key);
+    }
+
+    /**
+     * Use master data source.
+     */
+    public static void useMasterDataSource() {
+        CONTEXT_HOLDER.set(DataSourceKey.master.name());
+    }
+
+    /**
+     * Use slave data source.
+     */
+    public static void useSlaveDataSource() {
+        lock.lock();
+
+        try {
+            int datasourceKeyIndex = counter % slaveDataSourceKeys.size();
+            Object obj = slaveDataSourceKeys.get(datasourceKeyIndex);
+            CONTEXT_HOLDER.set(String.valueOf(obj));
+            counter++;
+        } catch (Exception e) {
+            logger.error("Switch slave datasource failed, error message is {}", e.getMessage());
+            useMasterDataSource();
+            e.printStackTrace();
+        } finally {
+            lock.unlock();
+        }
     }
 
     /**
@@ -45,14 +76,14 @@ public class DynamicDataSourceContextHolder {
      * @return data source key
      */
     public static String getDataSourceKey() {
-        return contextHolder.get();
+        return CONTEXT_HOLDER.get();
     }
 
     /**
      * To set DataSource as default
      */
     public static void clearDataSourceKey() {
-        contextHolder.remove();
+        CONTEXT_HOLDER.remove();
     }
 
     /**

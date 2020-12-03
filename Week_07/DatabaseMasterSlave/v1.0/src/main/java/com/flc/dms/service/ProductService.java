@@ -1,7 +1,9 @@
 package com.flc.dms.service;
 
-import com.flc.dms.mapper.ProductMapper;
+import com.flc.dms.dao.ProductDao;
 import com.flc.dms.modal.Product;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,7 +16,7 @@ import java.util.List;
 public class ProductService {
 
     @Resource
-    private ProductMapper productDao;
+    private ProductDao productDao;
 
     /**
      * Get product by id
@@ -41,6 +43,7 @@ public class ProductService {
      * @return
      * @throws Exception
      */
+    @Transactional(rollbackFor = DataAccessException.class)
     public Product update(long productId, Product newProduct) throws Exception {
 
         if (productDao.update(newProduct) <= 0) {
@@ -56,6 +59,7 @@ public class ProductService {
      * @return
      * @throws Exception
      */
+    @Transactional(rollbackFor = DataAccessException.class)
     public boolean add(Product newProduct) throws Exception {
         Integer num = productDao.insert(newProduct);
         if (num <= 0) {
@@ -71,6 +75,7 @@ public class ProductService {
      * @return
      * @throws Exception
      */
+    @Transactional(rollbackFor = DataAccessException.class)
     public boolean delete(long productId) throws Exception {
         Integer num = productDao.delete(productId);
         if (num <= 0) {
@@ -80,11 +85,11 @@ public class ProductService {
     }
 
     /**
-     * Query all product
+     * Get all product
      *
      * @return
      */
-    public List<Product> selectAll() {
-        return productDao.selectAll();
+    public List<Product> getAllProduct() {
+        return productDao.getAllProduct();
     }
 }
