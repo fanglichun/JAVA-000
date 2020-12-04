@@ -1,21 +1,21 @@
-package com.flc.dms.configuration;
+package com.flc.dms.aop;
 
+import com.flc.dms.configuration.DynamicDataSourceContextHolder;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 
 @Aspect
-@Order(0)
+@Order(1)
 @Component
+@Slf4j
 public class DynamicDataSourceAspect {
-    private static final Logger logger = LoggerFactory.getLogger(DynamicDataSourceAspect.class);
 
     private final String[] QUERY_PREFIX = {"select"};
 
@@ -36,7 +36,7 @@ public class DynamicDataSourceAspect {
         Boolean isQueryMethod = isQueryMethod(point.getSignature().getName());
         if (isQueryMethod) {
             DynamicDataSourceContextHolder.useSlaveDataSource();
-            logger.info("Switch DataSource to [{}] in Method [{}]",
+            log.info("Switch DataSource to [{}] in Method [{}]",
                     DynamicDataSourceContextHolder.getDataSourceKey(), point.getSignature());
         } else {
             DynamicDataSourceContextHolder.useMasterDataSource();
@@ -51,8 +51,7 @@ public class DynamicDataSourceAspect {
     @After("daoAspect())")
     public void restoreDataSource(JoinPoint point) {
         DynamicDataSourceContextHolder.clearDataSourceKey();
-        logger.info("Restore DataSource to [{}] in Method [{}]",
-                DynamicDataSourceContextHolder.getDataSourceKey(), point.getSignature());
+        log.info("Restore DataSource to [{}] in Method [{}]", DynamicDataSourceContextHolder.getDataSourceKey(), point.getSignature());
     }
 
 

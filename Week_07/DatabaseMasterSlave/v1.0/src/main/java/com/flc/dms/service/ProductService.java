@@ -1,8 +1,9 @@
 package com.flc.dms.service;
 
+import com.flc.dms.annotation.TargetDataSource;
 import com.flc.dms.dao.ProductDao;
+import com.flc.dms.enums.DataSourceKey;
 import com.flc.dms.modal.Product;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,6 +27,7 @@ public class ProductService {
      * @return
      * @throws Exception
      */
+    @TargetDataSource(DataSourceKey.slaveBeta)
     public Product select(long productId) throws Exception {
         Product product = productDao.select(productId);
         if (product == null) {
@@ -39,6 +41,7 @@ public class ProductService {
      *
      * @return
      */
+    @TargetDataSource(DataSourceKey.master)
     public List<Product> getAllProduct() {
         return productDao.getAllProduct();
     }

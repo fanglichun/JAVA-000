@@ -7,10 +7,18 @@
 ######5、改进三下1.3：支持多个从库的负载均衡
 ######6、总结:
 ```
+DynamicDataSourceAspect:
+可以对包下面的指定规则方法进行AOP拦截，通过取模运算轮询的选取slave库
+SpecifyDataSourceAspect:
+可以在service上的方法上添加TargetDataSource注解，指定使用哪个slave库。
+可以给DynamicDataSourceAspect和SpecifyDataSourceAspect指定不同的优先级启用哪个AOP拦截规则，
+也可以直接注释掉不使用AOP规则的@Aspect注解。
+后面可以加个开关启用哪个AOP规则
+```
+```
 Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/classpath*:mapping/*.xml]
 springboot2.0+版本无需添加如下配置,spring-boot2.0以下版本需要添加
 mybatis.mapper-locations=classpath*:mapping/*.xml
-
 ```
 
 ```

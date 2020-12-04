@@ -2,19 +2,17 @@ package com.flc.dms.configuration;
 
 
 import com.flc.dms.enums.DataSourceKey;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+@Slf4j
 public class DynamicDataSourceContextHolder {
 
-    private static final Logger logger = LoggerFactory.getLogger(DynamicDataSourceContextHolder.class);
-
-    private static Lock lock = new ReentrantLock();
+    private static final Lock lock = new ReentrantLock();
 
     private static int counter = 0;
 
@@ -51,7 +49,7 @@ public class DynamicDataSourceContextHolder {
     }
 
     /**
-     * Use slave data source.
+     * Use slave data source randomly by Modular arithmetic.
      */
     public static void useSlaveDataSource() {
         lock.lock();
@@ -62,9 +60,8 @@ public class DynamicDataSourceContextHolder {
             CONTEXT_HOLDER.set(String.valueOf(obj));
             counter++;
         } catch (Exception e) {
-            logger.error("Switch slave datasource failed, error message is {}", e.getMessage());
+            log.error("Switch slave datasource failed, error message is {}", e.getMessage());
             useMasterDataSource();
-            e.printStackTrace();
         } finally {
             lock.unlock();
         }
