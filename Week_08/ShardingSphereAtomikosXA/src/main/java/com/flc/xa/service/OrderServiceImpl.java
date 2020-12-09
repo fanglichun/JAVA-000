@@ -1,11 +1,12 @@
-package com.flc.dms.service;
+package com.flc.xa.service;
 
-import com.flc.dms.mapper.OrderItemMapper;
-import com.flc.dms.domain.Address;
-import com.flc.dms.domain.Order;
-import com.flc.dms.domain.OrderItem;
-import com.flc.dms.mapper.AddressMapper;
-import com.flc.dms.mapper.OrderMapper;
+
+import com.flc.xa.domain.Address;
+import com.flc.xa.domain.Order;
+import com.flc.xa.domain.OrderItem;
+import com.flc.xa.mapper.AddressMapper;
+import com.flc.xa.mapper.OrderItemMapper;
+import com.flc.xa.mapper.OrderMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;

@@ -32,7 +32,7 @@
       <module name="lambda_stream_guava" target="8" />
       <module name="network_io" target="8" />
       <module name="sharding-databases-tables" target="1.8" />
-      <module name="ShardingSphereAtomikosXA" target="1.5" />
+      <module name="ShardingSphereAtomikosXA" target="1.8" />
       <module name="starter" target="1.8" />
       <module name="v1.0" target="1.5" />
       <module name="v2.0" target="1.8" />
@@ -41,6 +41,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ShardingSphereAtomikosXA" options="-parameters" />
       <module name="dms1" options="-parameters" />
       <module name="http_demo" options="-parameters" />
       <module name="network_io" options="" />

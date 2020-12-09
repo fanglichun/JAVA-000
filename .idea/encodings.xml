@@ -6,9 +6,11 @@
     <file url="file://$PROJECT_DIR$/Week_05/starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Week_05/starter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Week_05/test_starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Week_05/test_starter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java" charset="UTF-8" />
   </component>
 </project>
