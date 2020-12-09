@@ -1,8 +1,8 @@
 package com.flc.dms.service;
 
 import com.flc.dms.annotation.TargetDataSource;
-import com.flc.dms.dao.ProductDao;
 import com.flc.dms.enums.DataSourceKey;
+import com.flc.dms.dao.ProductDao;
 import com.flc.dms.modal.Product;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;

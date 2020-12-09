@@ -9,5 +9,5 @@ import org.apache.ibatis.annotations.Mapper;
  * @desc
  */
 @Mapper
-public interface AddressRepository extends CommonRepository<Address, Long> {
+public interface AddressMapper extends CommonRepository<Address, Long> {
 }

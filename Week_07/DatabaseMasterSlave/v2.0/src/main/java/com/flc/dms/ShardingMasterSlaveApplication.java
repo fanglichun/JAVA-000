@@ -13,10 +13,10 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @MapperScan("com.flc.dms.mapper")
 
-public class ShardingSphereApplication {
+public class ShardingMasterSlaveApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ShardingSphereApplication.class, args);
+        SpringApplication.run(ShardingMasterSlaveApplication.class, args);
     }
 
 }

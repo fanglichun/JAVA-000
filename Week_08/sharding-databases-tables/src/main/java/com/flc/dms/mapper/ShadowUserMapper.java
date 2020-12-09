@@ -1,6 +1,6 @@
 package com.flc.dms.mapper;
 
-import com.flc.dms.domain.User;
+import com.flc.dms.domain.ShadowUser;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -9,5 +9,5 @@ import org.apache.ibatis.annotations.Mapper;
  * @desc
  */
 @Mapper
-public interface UserRepository extends CommonRepository<User, Long> {
+public interface ShadowUserMapper extends CommonRepository<ShadowUser, Long> {
 }

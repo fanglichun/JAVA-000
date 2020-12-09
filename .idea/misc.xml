@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/pom.xml" />
         <option value="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v3.0/pom.xml" />
         <option value="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_08/sharding-databases-tables/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/pom.xml" />
       </list>
     </option>
   </component>

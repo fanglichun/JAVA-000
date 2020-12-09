@@ -9,5 +9,5 @@ import org.apache.ibatis.annotations.Mapper;
  * @desc
  */
 @Mapper
-public interface OrderItemRepository extends CommonRepository<OrderItem,Long> {
+public interface OrderItemMapper extends CommonRepository<OrderItem,Long> {
 }

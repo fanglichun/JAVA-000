@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ShardingSphereAtomikosXA" />
         <module name="starter" />
         <module name="v2.0" />
         <module name="network_io" />
@@ -15,6 +16,7 @@
         <module name="jdbc" />
         <module name="v1.0" />
         <module name="dms" />
+        <module name="sharding-databases-tables" />
         <module name="fanglc-spring-boot-starter" />
         <module name="EB" />
         <module name="lambda_stream_guava" />
@@ -29,8 +31,10 @@
       <module name="jdbc" target="1.5" />
       <module name="lambda_stream_guava" target="8" />
       <module name="network_io" target="8" />
+      <module name="sharding-databases-tables" target="1.8" />
+      <module name="ShardingSphereAtomikosXA" target="1.5" />
       <module name="starter" target="1.8" />
-      <module name="v1.0" target="1.8" />
+      <module name="v1.0" target="1.5" />
       <module name="v2.0" target="1.8" />
       <module name="v3.0" target="1.5" />
     </bytecodeTargetLevel>
@@ -40,6 +44,7 @@
       <module name="dms1" options="-parameters" />
       <module name="http_demo" options="-parameters" />
       <module name="network_io" options="" />
+      <module name="sharding-databases-tables" options="-parameters" />
       <module name="starter" options="-parameters" />
       <module name="v1.0" options="-parameters" />
       <module name="v2.0" options="-parameters" />

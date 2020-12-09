@@ -1,11 +1,12 @@
 package com.flc.dms.service;
 
+import com.flc.dms.mapper.OrderItemMapper;
 import com.flc.dms.domain.Address;
 import com.flc.dms.domain.Order;
 import com.flc.dms.domain.OrderItem;
-import com.flc.dms.mapper.AddressRepository;
-import com.flc.dms.mapper.OrderItemRepository;
-import com.flc.dms.mapper.OrderRepository;
+import com.flc.dms.mapper.AddressMapper;
+import com.flc.dms.mapper.OrderMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,99 +23,100 @@ import java.util.List;
  */
 @Service
 @Primary
+@Slf4j
 public class OrderServiceImpl implements ShardingSphereService{
 
     @Resource
-    private OrderRepository orderRepository;
+    private OrderMapper orderMapper;
 
     @Resource
-    private OrderItemRepository orderItemRepository;
+    private OrderItemMapper orderItemMapper;
 
     @Resource
-    private AddressRepository addressRepository;
+    private AddressMapper addressMapper;
 
     @Override
     public void initEnvironment() throws SQLException {
-        orderRepository.createTableIfNotExists();
-        orderItemRepository.createTableIfNotExists();
-        orderRepository.truncateTable();
-        orderItemRepository.truncateTable();
+        orderMapper.createTableIfNotExists();
+        orderItemMapper.createTableIfNotExists();
+        orderMapper.truncateTable();
+        orderItemMapper.truncateTable();
         initAddressTable();
     }
 
     private void initAddressTable() throws SQLException {
-        addressRepository.createTableIfNotExists();
-        addressRepository.truncateTable();
+        addressMapper.createTableIfNotExists();
+        addressMapper.truncateTable();
         for (int i = 1; i <= 10; i++) {
             Address entity = new Address();
             entity.setAddressId((long) i);
             entity.setAddressName("address_" + i);
-            addressRepository.insert(entity);
+            addressMapper.insert(entity);
         }
     }
 
     @Override
     public void cleanEnvironment() throws SQLException {
-        orderRepository.dropTable();
-        orderItemRepository.dropTable();
+        orderMapper.dropTable();
+        orderItemMapper.dropTable();
     }
 
     @Override
     @Transactional
     public void processSuccess() throws SQLException {
-        System.out.println("-------------- Process Success Begin ---------------");
+        log.info("-------------- Process Success Begin ---------------");
         List<Long> orderIds = insertData();
         printData();
         deleteData(orderIds);
         printData();
-        System.out.println("-------------- Process Success Finish --------------");
+        log.info("-------------- Process Success Finish --------------");
     }
 
     @Override
     @Transactional
     public void processFailure() throws SQLException {
-        System.out.println("-------------- Process Failure Begin ---------------");
+        log.info("-------------- Process Failure Begin ---------------");
         insertData();
-        System.out.println("-------------- Process Failure Finish --------------");
+        log.info("-------------- Process Failure Finish --------------");
         throw new RuntimeException("Exception occur for transaction test.");
     }
 
     public List<Long> insertData() throws SQLException {
-        System.out.println("---------------------------- Insert Data ----------------------------");
+        log.info("---------------------------- Insert Data ----------------------------");
         List<Long> result = new ArrayList<>(10);
         for (int i = 1; i <= 10; i++) {
             Order order = new Order();
             order.setUserId(i);
             order.setAddressId(i);
             order.setStatus("INSERT_TEST");
-            orderRepository.insert(order);
+            orderMapper.insert(order);
             OrderItem item = new OrderItem();
             item.setOrderId(order.getOrderId());
             item.setUserId(i);
             item.setStatus("INSERT_TEST");
-            orderItemRepository.insert(item);
+            orderItemMapper.insert(item);
             result.add(order.getOrderId());
         }
         return result;
     }
 
     public void deleteData(final List<Long> orderIds) throws SQLException {
-        System.out.println("---------------------------- Delete Data ----------------------------");
+        log.info("---------------------------- Delete Data ----------------------------");
         for (Long each : orderIds) {
-            orderRepository.delete(each);
-            orderItemRepository.delete(each);
+//            orderMapper.delete(each);
+//            orderItemMapper.delete(each);
         }
     }
 
     @Override
     public void printData() throws SQLException {
-        System.out.println("---------------------------- Print Order Data -----------------------");
-        for (Object each : orderRepository.selectAll()) {
-            System.out.println(each);
+        log.info("---------------------------- Print Order Data -----------------------");
+        for (Order order : orderMapper.selectAll()) {
+            log.info(order.toString());
         }
-        System.out.println("---------------------------- Print OrderItem Data -------------------");
-        for (Object each : orderItemRepository.selectAll()) {
-            System.out.println(each);
+        log.info("---------------------------- Print OrderItem Data -------------------");
+        for (OrderItem orderItem : orderItemMapper.selectAll()) {
+            log.info(orderItem.toString());
         }
     }
 }

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.flc.dms.dao.ProductDao">
+<mapper namespace="com.flc.com.flc.dms.dao.ProductDao">
 
-    <resultMap id="baseResultMap" type="com.flc.dms.modal.Product">
+    <resultMap id="baseResultMap" type="com.flc.com.flc.dms.modal.Product">
         <id column="id" property="id" javaType="java.lang.Long" jdbcType="INTEGER"></id>
         <result column="name" property="name" javaType="java.lang.String" jdbcType="VARCHAR"></result>
         <result column="price" property="price" javaType="java.lang.Long" jdbcType="BIGINT"></result>
     </resultMap>
 
-    <select id="select" resultType="com.flc.dms.modal.Product">
+    <select id="select" resultType="com.flc.com.flc.dms.modal.Product">
         SELECT *
         FROM product
         WHERE id = #{id}
@@ -25,7 +25,7 @@
         FROM product
     </select>
 
-    <update id="update" parameterType="com.flc.dms.modal.Product" flushCache="true">
+    <update id="update" parameterType="com.flc.com.flc.dms.modal.Product" flushCache="true">
         UPDATE product
         SET name = #{name}, price = #{price}
         WHERE id = #{id}
@@ -38,7 +38,7 @@
         LIMIT 1
     </delete>
 
-    <insert id="insert" parameterType="com.flc.dms.modal.Product">
+    <insert id="insert" parameterType="com.flc.com.flc.dms.modal.Product">
         INSERT INTO product (name, price) VALUES (#{name}, #{price});
     </insert>
 </mapper>

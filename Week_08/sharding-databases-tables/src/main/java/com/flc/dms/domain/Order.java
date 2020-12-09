@@ -1,7 +1,6 @@
 package com.flc.dms.domain;
 
 import lombok.Data;
-import lombok.ToString;
 
 import java.io.Serializable;
 

@@ -25,7 +25,8 @@ mybatis.mapper-locations=classpath*:mapping/*.xml
 org.apache.ibatis.binding.BindingException: Invalid bound statement (not found)
 resouce下的mapper是文件夹，不是包
 启动类需要配置mybatis扫描的包路径，如下所示：
-@MapperScan(basePackages = "com.flc.dms.mapper")
+@MapperScan(basePackages = "com.flc.com.flc.dms.mapper")
+mapper接口类的名称一定要和对应的XML文件名保持一致.
 ```
 
 ```

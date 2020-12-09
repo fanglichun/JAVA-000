@@ -8,49 +8,65 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97a194e6-7790-4492-b4b0-ff50c13ed1f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/ShardingSphereApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/controller/ProduceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/domain/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/domain/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/domain/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/domain/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/domain/ShadowUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/AddressRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/CommonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/OrderItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/ShadowUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/service/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/service/ShadowUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/service/ShardingSphereService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/com/flc/dms/mapper/AddressMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/com/flc/dms/mapper/OrderItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/com/flc/dms/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/com/flc/dms/mapper/ProductDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/com/flc/dms/mapper/ShadowUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/com/flc/dms/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/logback.xml" afterDir="false" />
+    <list default="true" id="97a194e6-7790-4492-b4b0-ff50c13ed1f4" name="Default Changelist" comment="sharding-jdbc-添加分库分表等配置。">
+      <change afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/scheme.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/ShardingSphereAtomikosXA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/sharding-databases-tables.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/ShardingDatabasesTablesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/mapper/AddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/mapper/OrderItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/mapper/ShadowUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/application-master-slave.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/scheme.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_05/test_starter/src/test/java/com/flc/starter/StarterApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_05/test_starter/src/test/java/com/flc/starter/StarterApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_05/test_starter/starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_05/test_starter/starter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources/applicatoin.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/aop/SpecifyDataSourceAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/aop/SpecifyDataSourceAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/java/com/flc/dms/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources/applicatoin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources/applicatoin.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources/com/flc/dms/dao/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/src/main/resources/com/flc/dms/dao/ProductDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/v1.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/v1.0.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/v2.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/v2.0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/ShardingSphereApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/ShardingMasterSlaveApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/domain/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/domain/ShadowUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/domain/ShadowUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/AddressRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/CommonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/mapper/CommonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/OrderItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/OrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/ShadowUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/mapper/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/service/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/service/ShadowUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/service/ShadowUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/service/ShardingSphereService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/service/ShardingSphereService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/java/com/flc/dms/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/application-sharding-databases-tables.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/application-sharding-databases-tables.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/application-sharding-databases.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/application-sharding-databases.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/application-sharding-master-slave.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/application-sharding-master-slave.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/application-sharding-tables.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/application-sharding-tables.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/com/flc/dms/mapper/AddressMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/com/flc/dms/mapper/AddressMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/com/flc/dms/mapper/OrderItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/com/flc/dms/mapper/OrderItemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/com/flc/dms/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/com/flc/dms/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/com/flc/dms/mapper/ShadowUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/com/flc/dms/mapper/ShadowUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/com/flc/dms/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/com/flc/dms/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v3.0/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v3.0/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_07/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_08/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +121,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/src/main/resources/com/flc/dms/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -115,15 +131,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="com.flc.dms" />
       <recent name="com.flc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-databases-tables\src\main\java" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-databases-tables\src\main\resources" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-databases-tables\src" />
       <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v2.0\src\main\resources\com\flc\dms\mapper" />
       <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v2.0\src\main\resources" />
-      <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0\src\main\resources" />
-      <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0\src\main\java\com\flc\dms\configuration" />
-      <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.flc.dms.service" />
@@ -133,27 +150,14 @@
       <recent name="com.flc.dms.annotation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-databases-tables\src\main\resources\com\flc\dms\mapper" />
       <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v2.0\src\main\resources" />
       <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0\src\main\resources\com\flc\dms\mapper" />
       <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0\src\main\resources" />
       <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0\src\main\resources\com\flc\mapper" />
-      <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0\src\main\resources\com\flc\dms" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ShardingSphereApplication">
-    <configuration name="LambdaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.flc.LambdaApp" />
-      <module name="lambda_stream_guava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.flc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.ShardingDatabasesTablesApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -167,58 +171,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jdbc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.flc.jdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.flc.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.flc.jdbc.JdbcApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StarterApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.flc.starter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.flc.starter" />
-      <option name="MAIN_CLASS_NAME" value="com.flc.starter.StarterApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DynamicDataSourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="v1.0" />
+    <configuration name="ShardingDatabasesTablesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="sharding-databases-tables" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.flc.dms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flc.dms.DynamicDataSourceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flc.dms.ShardingDatabasesTablesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="jdbc" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flc.jdbc.JdbcApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShardingSphereApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ShardingMasterSlaveApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="v2.0" />
       <extension name="coverage">
         <pattern>
@@ -226,25 +192,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flc.dms.ShardingSphereApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StarterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="starter" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flc.starter.StarterApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flc.dms.ShardingMasterSlaveApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ShardingSphereApplication" />
-        <item itemvalue="Spring Boot.DynamicDataSourceApplication" />
-        <item itemvalue="Application.LambdaApp" />
-        <item itemvalue="JUnit.StarterApplicationTests" />
-        <item itemvalue="JUnit.JdbcApplicationTests.contextLoads" />
+        <item itemvalue="Spring Boot.ShardingDatabasesTablesApplication" />
+        <item itemvalue="Spring Boot.ShardingMasterSlaveApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +257,9 @@
       <workItem from="1606974786741" duration="6702000" />
       <workItem from="1607046768893" duration="8318000" />
       <workItem from="1607061047714" duration="3006000" />
-      <workItem from="1607064268983" duration="14659000" />
+      <workItem from="1607064268983" duration="16816000" />
+      <workItem from="1607421048219" duration="123000" />
+      <workItem from="1607421289235" duration="13749000" />
     </task>
     <task id="LOCAL-00001" summary="导入idea删除无用的文件">
       <created>1602403256486</created>
@@ -450,7 +408,28 @@
       <option name="project" value="LOCAL" />
       <updated>1607053368300</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="主备数据源切换V2版本-sharding-jdbc实现dataSource master-slave机制">
+      <created>1607306165526</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1607306165526</updated>
+    </task>
+    <task id="LOCAL-00023" summary="主备数据源切换V2版本-sharding-jdbc实现dataSource master-slave机制">
+      <created>1607306246119</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1607306246119</updated>
+    </task>
+    <task id="LOCAL-00024" summary="sharding-jdbc-添加分库分表等配置。">
+      <created>1607307565816</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1607307565816</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,69 +503,75 @@
     <MESSAGE value="主备数据源切换V1版本-测试提交。" />
     <MESSAGE value="主备数据源切换V1版本-添加轮询选择slave" />
     <MESSAGE value="主备数据源切换V1版本-添加2个AOP拦截规则版本。" />
-    <option name="LAST_COMMIT_MESSAGE" value="主备数据源切换V1版本-添加2个AOP拦截规则版本。" />
+    <MESSAGE value="主备数据源切换V2版本-sharding-jdbc实现dataSource master-slave机制" />
+    <MESSAGE value="sharding-jdbc-添加分库分表等配置。" />
+    <option name="LAST_COMMIT_MESSAGE" value="sharding-jdbc-添加分库分表等配置。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1605596817885">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1605596817885" />
-    <state x="121" y="0" key="#Project_Structure" timestamp="1607060344953">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1607503326987">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1607060344953" />
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1607503326987" />
     <state x="33" y="182" key="#SQL_Dialects" timestamp="1605692064715">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="33" y="182" key="#SQL_Dialects/0.0.1280.680@0.0.1280.680" timestamp="1605692064715" />
-    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605697385884">
+    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607506550098">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1605697385884" />
+    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1607506550098" />
     <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1607068399597">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1607068399597" />
-    <state x="349" y="264" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605441435764">
+    <state x="349" y="264" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1607503394596">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="349" y="264" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1605441435764" />
-    <state x="357" y="208" width="566" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606906279168">
+    <state x="349" y="264" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1607503394596" />
+    <state x="357" y="208" width="566" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607421068433">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="357" y="208" width="566" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1606906279168" />
+    <state x="357" y="208" width="566" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1607421068433" />
     <state x="425" y="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1605441437345">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="425" y="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680@0.0.1280.680" timestamp="1605441437345" />
-    <state x="282" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606972925147">
+    <state x="282" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607497035521">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="282" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1606972925147" />
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606974852449">
+    <state x="282" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1607497035521" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607505160359">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606974852449" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607505160359" />
     <state x="371" y="87" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1605095127805">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="87" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.680@0.0.1280.680" timestamp="1605095127805" />
+    <state x="396" y="43" key="#xdebugger.evaluate" timestamp="1607495843102">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="396" y="43" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1607495843102" />
     <state x="385" y="183" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1605095289740">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="385" y="183" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1605095289740" />
-    <state x="185" y="0" key="CommitChangelistDialog2" timestamp="1607053367409">
+    <state x="116" y="0" key="CommitChangelistDialog2" timestamp="1607506100705">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="185" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607053367409" />
-    <state width="507" height="466" key="DebuggerActiveHint" timestamp="1606978297647">
+    <state x="116" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607506100705" />
+    <state width="507" height="466" key="DebuggerActiveHint" timestamp="1607495873969">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="507" height="466" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1606978297647" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1607073941320">
+    <state width="507" height="466" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1607495873969" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1607506036790">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1607073941320" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1607506036790" />
     <state x="400" y="95" key="FileChooserDialogImpl" timestamp="1607078419361">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -595,54 +580,54 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="512" y="238" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1605522015889" />
-    <state width="1237" height="83" key="GridCell.Tab.0.bottom" timestamp="1607305675380">
+    <state width="1237" height="321" key="GridCell.Tab.0.bottom" timestamp="1607506342050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="83" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607305675380" />
-    <state width="1237" height="83" key="GridCell.Tab.0.center" timestamp="1607305675379">
+    <state width="1237" height="321" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607506342050" />
+    <state width="1237" height="321" key="GridCell.Tab.0.center" timestamp="1607506342050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="83" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607305675379" />
-    <state width="1237" height="83" key="GridCell.Tab.0.left" timestamp="1607305675379">
+    <state width="1237" height="321" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607506342050" />
+    <state width="1237" height="321" key="GridCell.Tab.0.left" timestamp="1607506342049">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="83" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607305675379" />
-    <state width="1237" height="83" key="GridCell.Tab.0.right" timestamp="1607305675380">
+    <state width="1237" height="321" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607506342049" />
+    <state width="1237" height="321" key="GridCell.Tab.0.right" timestamp="1607506342050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="83" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607305675380" />
-    <state width="1237" height="83" key="GridCell.Tab.1.bottom" timestamp="1607305674983">
+    <state width="1237" height="321" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607506342050" />
+    <state width="1237" height="321" key="GridCell.Tab.1.bottom" timestamp="1607506342051">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="83" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607305674983" />
-    <state width="1237" height="83" key="GridCell.Tab.1.center" timestamp="1607305674983">
+    <state width="1237" height="321" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607506342051" />
+    <state width="1237" height="321" key="GridCell.Tab.1.center" timestamp="1607506342050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="83" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1607305674983" />
-    <state width="1237" height="83" key="GridCell.Tab.1.left" timestamp="1607305674983">
+    <state width="1237" height="321" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1607506342050" />
+    <state width="1237" height="321" key="GridCell.Tab.1.left" timestamp="1607506342050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="83" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1607305674983" />
-    <state width="1237" height="83" key="GridCell.Tab.1.right" timestamp="1607305674983">
+    <state width="1237" height="321" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1607506342050" />
+    <state width="1237" height="321" key="GridCell.Tab.1.right" timestamp="1607506342051">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="83" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1607305674983" />
-    <state width="1237" height="83" key="GridCell.Tab.2.bottom" timestamp="1607305674983">
+    <state width="1237" height="321" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1607506342051" />
+    <state width="1237" height="321" key="GridCell.Tab.2.bottom" timestamp="1607506342052">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="83" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607305674983" />
-    <state width="1237" height="83" key="GridCell.Tab.2.center" timestamp="1607305674983">
+    <state width="1237" height="321" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607506342052" />
+    <state width="1237" height="321" key="GridCell.Tab.2.center" timestamp="1607506342051">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="83" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1607305674983" />
-    <state width="1237" height="83" key="GridCell.Tab.2.left" timestamp="1607305674983">
+    <state width="1237" height="321" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1607506342051" />
+    <state width="1237" height="321" key="GridCell.Tab.2.left" timestamp="1607506342051">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="83" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1607305674983" />
-    <state width="1237" height="83" key="GridCell.Tab.2.right" timestamp="1607305674983">
+    <state width="1237" height="321" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1607506342051" />
+    <state width="1237" height="321" key="GridCell.Tab.2.right" timestamp="1607506342051">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="83" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1607305674983" />
+    <state width="1237" height="321" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1607506342051" />
     <state x="221" y="75" key="IDE.errors.dialog" timestamp="1605766209786">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -655,22 +640,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="277" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1606206817796" />
-    <state x="481" y="42" key="RollbackChangesDialog" timestamp="1607073942264">
+    <state x="481" y="42" key="RollbackChangesDialog" timestamp="1607506038179">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="481" y="42" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607073942264" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1607066428462">
+    <state x="481" y="42" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607506038179" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1607503279448">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1607066428462" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1607503279448" />
     <state x="417" y="37" width="863" height="605" key="SpringBootCustomization" timestamp="1606904342488">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="417" y="37" width="863" height="605" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1606904342488" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607053369792">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607307567053">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607053369792" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607307567053" />
     <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607046214325">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -687,14 +672,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="338" y="72" width="676" height="594" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1606976049177" />
-    <state x="28" y="0" key="new project wizard" timestamp="1607061200854">
+    <state x="28" y="0" key="new project wizard" timestamp="1607505700100">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="28" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1607061200854" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1607304793112">
+    <state x="28" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1607505700100" />
+    <state x="433" y="199" key="scopes" timestamp="1607506397843">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607304793112" />
+    <state x="433" y="199" key="scopes/0.0.1280.680@0.0.1280.680" timestamp="1607506397843" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1607498682531">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607498682531" />
     <state x="321" y="23" key="spring file set editor" timestamp="1607060901717">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.flc.dms.mapper.AddressRepository">
+<mapper namespace="com.flc.dms.mapper.AddressMapper">
     <resultMap id="baseResultMap" type="com.flc.dms.domain.Address">
         <result column="address_id" property="addressId" jdbcType="BIGINT"/>
         <result column="address_name" property="addressName" jdbcType="VARCHAR"/>

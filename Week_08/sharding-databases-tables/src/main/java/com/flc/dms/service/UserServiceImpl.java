@@ -1,7 +1,7 @@
 package com.flc.dms.service;
 
-import com.flc.dms.domain.ShadowUser;
-import com.flc.dms.mapper.ShadowUserRepository;
+import com.flc.dms.domain.User;
+import com.flc.dms.mapper.UserMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -11,24 +11,23 @@ import java.util.List;
 
 /**
  * @creator fanglc@anch.net
- * @createdTime 2020/12/4 15:55
+ * @createdTime 2020/12/4 15:53
  * @desc
  */
-@Service("shadow")
-public class ShadowUserServiceImpl implements ShardingSphereService {
-
+@Service("encrypt")
+public class UserServiceImpl implements ShardingSphereService {
     @Resource
-    private ShadowUserRepository shadowUserRepository;
+    private UserMapper userMapper;
 
     @Override
     public void initEnvironment() throws SQLException {
-        shadowUserRepository.createTableIfNotExists();
-        shadowUserRepository.truncateTable();
+        userMapper.createTableIfNotExists();
+        userMapper.truncateTable();
     }
 
     @Override
     public void cleanEnvironment() throws SQLException {
-        shadowUserRepository.dropTable();
+        userMapper.dropTable();
     }
 
     @Override
@@ -44,14 +43,13 @@ public class ShadowUserServiceImpl implements ShardingSphereService {
     @Override
     public List<Long> insertData() throws SQLException {
         System.out.println("---------------------------- Insert Data ----------------------------");
-        List<Long> result = new ArrayList<Long>(10);
+        List<Long> result = new ArrayList<>(10);
         for (int i = 1; i <= 10; i++) {
-            ShadowUser user = new ShadowUser();
+            User user = new User();
             user.setUserId(i);
             user.setUserName("test_mybatis_" + i);
             user.setPwd("pwd_mybatis_" + i);
-            user.setShadow(i % 2 == 0);
-            shadowUserRepository.insert(user);
+            userMapper.insert(user);
             result.add((long) user.getUserId());
         }
         return result;
@@ -69,14 +67,14 @@ public class ShadowUserServiceImpl implements ShardingSphereService {
     public void deleteData(final List<Long> userIds) throws SQLException {
         System.out.println("---------------------------- Delete Data ----------------------------");
         for (Long each : userIds) {
-            shadowUserRepository.delete(each);
+            userMapper.delete(each);
         }
     }
 
     @Override
     public void printData() throws SQLException {
         System.out.println("---------------------------- Print User Data -----------------------");
-        for (Object each : shadowUserRepository.selectAll()) {
+        for (Object each : userMapper.selectAll()) {
             System.out.println(each);
         }
     }
