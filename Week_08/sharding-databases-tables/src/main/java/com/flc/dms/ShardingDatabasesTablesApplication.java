@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  * @desc
  */
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-@MapperScan("com.flc.xa.mapper")
+@MapperScan("com.flc.dms.mapper")
 public class ShardingDatabasesTablesApplication {
 
     public static void main(String[] args) {

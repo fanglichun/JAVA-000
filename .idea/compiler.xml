@@ -17,6 +17,7 @@
         <module name="v1.0" />
         <module name="dms" />
         <module name="sharding-databases-tables" />
+        <module name="transaction-2pc-xa" />
         <module name="fanglc-spring-boot-starter" />
         <module name="EB" />
         <module name="lambda_stream_guava" />
@@ -34,6 +35,7 @@
       <module name="sharding-databases-tables" target="1.8" />
       <module name="ShardingSphereAtomikosXA" target="1.8" />
       <module name="starter" target="1.8" />
+      <module name="transaction-2pc-xa" target="1.8" />
       <module name="v1.0" target="1.5" />
       <module name="v2.0" target="1.8" />
       <module name="v3.0" target="1.5" />

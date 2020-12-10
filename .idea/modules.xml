@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/Week_02/network_io.iml" filepath="$PROJECT_DIR$/Week_02/network_io.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_08/sharding-databases-tables/sharding-databases-tables.iml" filepath="$PROJECT_DIR$/Week_08/sharding-databases-tables/sharding-databases-tables.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_05/test_starter/starter.iml" filepath="$PROJECT_DIR$/Week_05/test_starter/starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_08/transaction-2pc-xa/transaction-2pc-xa.iml" filepath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/transaction-2pc-xa.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/v1.0.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/v1.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/v2.0.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/v2.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v3.0/v3.0.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v3.0/v3.0.iml" />

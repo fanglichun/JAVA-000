@@ -8,46 +8,35 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97a194e6-7790-4492-b4b0-ff50c13ed1f4" name="Default Changelist" comment="sharding-jdbc-添加分库分表等配置。">
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/ShardingSphereXAApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/domain/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/domain/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/domain/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/domain/ShadowUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/mapper/AddressMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/mapper/CommonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/mapper/OrderItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/mapper/ShadowUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/service/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/service/ShadowUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/service/ShardingSphereService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper/AddressMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper/OrderItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper/ShadowUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper/UserMapper.xml" afterDir="false" />
+    <list default="true" id="97a194e6-7790-4492-b4b0-ff50c13ed1f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/service/AtomikosXAService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/src/main/java/com/flc/xa/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/src/main/java/com/flc/xa/TransactionConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/src/main/java/com/flc/xa/XAOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/src/main/resources/sharding-databases-tables.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/src/test/java/com/flc/xa/XAOrderServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/transaction-2pc-xa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/v1.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/v1.0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_08/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/ShardingSphereAtomikosXA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/ShardingSphereAtomikosXA.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper/OrderMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/ShardingDatabasesTablesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/ShardingDatabasesTablesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java/com/flc/dms/service/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/application-sharding-databases-tables.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/resources/application-sharding-databases-tables.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,9 +44,9 @@
         <option value="Enum" />
         <option value="spring-beans.schema" />
         <option value="mapper" />
+        <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -74,9 +63,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="$USER_HOME$/Documents/Repositories" />
-        <option name="mavenHome" value="$USER_HOME$/Documents/maven/apache-maven-3.5.4" />
-        <option name="userSettingsFile" value="$USER_HOME$/Documents/maven/apache-maven-3.5.4/conf/settings.xml" />
+        <option name="localRepository" value="D:\repo" />
+        <option name="mavenHome" value="C:\apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="C:\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -89,21 +78,23 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -112,14 +103,14 @@
       <recent name="com.flc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper" />
-      <recent name="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa" />
-      <recent name="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_08\ShardingSphereAtomikosXA" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_08\ShardingSphereAtomikosXA\src\main\resources" />
       <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-databases-tables\src\main\java" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-databases-tables\src\main\resources" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-databases-tables\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.flc.xa" />
+      <recent name="com.flc.xa.controller" />
       <recent name="com.flc.dms.service" />
       <recent name="com.flc.dms.controller" />
       <recent name="com.flc.dms.mapper" />
@@ -132,13 +123,6 @@
       <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0\src\main\resources" />
       <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v1.0\src\main\resources\com\flc\mapper" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ShardingSphereXAApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
@@ -154,9 +138,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="jdbc" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flc.jdbc.JdbcApplication" />
+    <configuration name="XAOrderServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="transaction-2pc-xa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flc.xa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.flc.xa" />
+      <option name="MAIN_CLASS_NAME" value="com.flc.xa.XAOrderServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="transaction-2pc-xa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flc.xa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flc.xa.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicDataSourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="v1.0" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flc.dms.DynamicDataSourceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,8 +186,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShardingMasterSlaveApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="ShardingMasterSlaveApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="v2.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flc.dms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.flc.dms.ShardingMasterSlaveApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -204,7 +222,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ShardingSphereXAApplication" />
+        <item itemvalue="Spring Boot.XAApplication" />
+        <item itemvalue="JUnit.XAOrderServiceTest" />
         <item itemvalue="Spring Boot.ShardingDatabasesTablesApplication" />
+        <item itemvalue="Spring Boot.ShardingMasterSlaveApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -263,10 +284,9 @@
       <workItem from="1607061047714" duration="3006000" />
       <workItem from="1607064268983" duration="16816000" />
       <workItem from="1607421048219" duration="123000" />
-      <workItem from="1607421289235" duration="13749000" />
-      <workItem from="1607515108173" duration="1486000" />
-      <workItem from="1607517424905" duration="2387000" />
-      <workItem from="1607524985671" duration="3253000" />
+      <workItem from="1607421289235" duration="17779000" />
+      <workItem from="1607581129036" duration="8354000" />
+      <workItem from="1607591582459" duration="3144000" />
     </task>
     <task id="LOCAL-00001" summary="导入idea删除无用的文件">
       <created>1602403256486</created>
@@ -436,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607307565816</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="第八次课程作业提交。">
+      <created>1607506812129</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1607506812129</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +539,8 @@
     <MESSAGE value="主备数据源切换V1版本-添加2个AOP拦截规则版本。" />
     <MESSAGE value="主备数据源切换V2版本-sharding-jdbc实现dataSource master-slave机制" />
     <MESSAGE value="sharding-jdbc-添加分库分表等配置。" />
-    <option name="LAST_COMMIT_MESSAGE" value="sharding-jdbc-添加分库分表等配置。" />
+    <MESSAGE value="第八次课程作业提交。" />
+    <option name="LAST_COMMIT_MESSAGE" value="第八次课程作业提交。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1605596817885">
@@ -527,11 +555,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="33" y="182" key="#SQL_Dialects/0.0.1280.680@0.0.1280.680" timestamp="1605692064715" />
-    <state x="126" y="23" width="1147" height="719" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607516068034">
-      <screen x="34" y="23" width="1246" height="777" />
+    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607506550098">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1607506550098" />
-    <state x="126" y="23" width="1147" height="719" key="#com.intellij.execution.impl.EditConfigurationsDialog/34.23.1246.777@34.23.1246.777" timestamp="1607516068034" />
+    <state x="386" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607593952465">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="386" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1607593952465" />
     <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1607068399597">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -568,87 +599,78 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="385" y="183" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1605095289740" />
-    <state x="116" y="0" key="CommitChangelistDialog2" timestamp="1607506100705">
+    <state x="116" y="0" key="CommitChangelistDialog2" timestamp="1607506809732">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="116" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607506100705" />
+    <state x="116" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607506809732" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1607495873969">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="507" height="466" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1607495873969" />
-    <state x="124" y="129" width="1095" height="495" key="DiffContextDialog" timestamp="1607528182113">
-      <screen x="33" y="23" width="1247" height="777" />
-    </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1607506036790" />
-    <state x="124" y="129" key="DiffContextDialog/33.23.1247.777@33.23.1247.777" timestamp="1607528182113" />
-    <state x="400" y="95" key="FileChooserDialogImpl" timestamp="1607078419361">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1607506036790">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="400" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1607078419361" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1607506036790" />
+    <state x="400" y="95" key="FileChooserDialogImpl" timestamp="1607593103012">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="400" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1607593103012" />
+    <state x="455" y="242" key="Github.CreateGistDialog" timestamp="1607592613697">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="455" y="242" key="Github.CreateGistDialog/0.0.1280.680@0.0.1280.680" timestamp="1607592613697" />
     <state x="512" y="238" key="Github.ShareDialog" timestamp="1605522015889">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="512" y="238" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1605522015889" />
-    <state width="739" height="3" key="GridCell.Tab.0.bottom" timestamp="1607528186912">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state width="1237" height="16" key="GridCell.Tab.0.bottom" timestamp="1607594416322">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="321" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607506342050" />
-    <state width="739" height="3" key="GridCell.Tab.0.bottom/33.23.1247.777@33.23.1247.777" timestamp="1607528186912" />
-    <state width="739" height="3" key="GridCell.Tab.0.center" timestamp="1607528186910">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state width="1237" height="16" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607594416322" />
+    <state width="1237" height="16" key="GridCell.Tab.0.center" timestamp="1607594416322">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="321" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607506342050" />
-    <state width="739" height="3" key="GridCell.Tab.0.center/33.23.1247.777@33.23.1247.777" timestamp="1607528186910" />
-    <state width="739" height="3" key="GridCell.Tab.0.left" timestamp="1607528186909">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state width="1237" height="16" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607594416322" />
+    <state width="1237" height="16" key="GridCell.Tab.0.left" timestamp="1607594416322">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="321" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607506342049" />
-    <state width="739" height="3" key="GridCell.Tab.0.left/33.23.1247.777@33.23.1247.777" timestamp="1607528186909" />
-    <state width="739" height="3" key="GridCell.Tab.0.right" timestamp="1607528186911">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state width="1237" height="16" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607594416322" />
+    <state width="1237" height="16" key="GridCell.Tab.0.right" timestamp="1607594416322">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="321" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607506342050" />
-    <state width="739" height="3" key="GridCell.Tab.0.right/33.23.1247.777@33.23.1247.777" timestamp="1607528186911" />
-    <state width="739" height="3" key="GridCell.Tab.1.bottom" timestamp="1607528186914">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state width="1237" height="16" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607594416322" />
+    <state width="1237" height="16" key="GridCell.Tab.1.bottom" timestamp="1607594416322">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="321" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607506342051" />
-    <state width="739" height="3" key="GridCell.Tab.1.bottom/33.23.1247.777@33.23.1247.777" timestamp="1607528186914" />
-    <state width="739" height="3" key="GridCell.Tab.1.center" timestamp="1607528186913">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state width="1237" height="16" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607594416322" />
+    <state width="1237" height="16" key="GridCell.Tab.1.center" timestamp="1607594416322">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="321" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1607506342050" />
-    <state width="739" height="3" key="GridCell.Tab.1.center/33.23.1247.777@33.23.1247.777" timestamp="1607528186913" />
-    <state width="739" height="3" key="GridCell.Tab.1.left" timestamp="1607528186912">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state width="1237" height="16" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1607594416322" />
+    <state width="1237" height="16" key="GridCell.Tab.1.left" timestamp="1607594416322">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="321" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1607506342050" />
-    <state width="739" height="3" key="GridCell.Tab.1.left/33.23.1247.777@33.23.1247.777" timestamp="1607528186912" />
-    <state width="739" height="3" key="GridCell.Tab.1.right" timestamp="1607528186913">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state width="1237" height="16" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1607594416322" />
+    <state width="1237" height="16" key="GridCell.Tab.1.right" timestamp="1607594416322">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="321" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1607506342051" />
-    <state width="739" height="3" key="GridCell.Tab.1.right/33.23.1247.777@33.23.1247.777" timestamp="1607528186913" />
-    <state width="739" height="3" key="GridCell.Tab.2.bottom" timestamp="1607528186916">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state width="1237" height="16" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1607594416322" />
+    <state width="1237" height="16" key="GridCell.Tab.2.bottom" timestamp="1607594416322">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="321" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607506342052" />
-    <state width="739" height="3" key="GridCell.Tab.2.bottom/33.23.1247.777@33.23.1247.777" timestamp="1607528186916" />
-    <state width="739" height="3" key="GridCell.Tab.2.center" timestamp="1607528186915">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state width="1237" height="16" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607594416322" />
+    <state width="1237" height="16" key="GridCell.Tab.2.center" timestamp="1607594416322">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="321" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1607506342051" />
-    <state width="739" height="3" key="GridCell.Tab.2.center/33.23.1247.777@33.23.1247.777" timestamp="1607528186915" />
-    <state width="739" height="3" key="GridCell.Tab.2.left" timestamp="1607528186914">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state width="1237" height="16" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1607594416322" />
+    <state width="1237" height="16" key="GridCell.Tab.2.left" timestamp="1607594416322">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="321" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1607506342051" />
-    <state width="739" height="3" key="GridCell.Tab.2.left/33.23.1247.777@33.23.1247.777" timestamp="1607528186914" />
-    <state width="739" height="3" key="GridCell.Tab.2.right" timestamp="1607528186915">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state width="1237" height="16" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1607594416322" />
+    <state width="1237" height="16" key="GridCell.Tab.2.right" timestamp="1607594416322">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="321" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1607506342051" />
-    <state width="739" height="3" key="GridCell.Tab.2.right/33.23.1247.777@33.23.1247.777" timestamp="1607528186915" />
+    <state width="1237" height="16" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1607594416322" />
     <state x="221" y="75" key="IDE.errors.dialog" timestamp="1605766209786">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -657,36 +679,34 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1607067219796" />
+    <state x="121" y="51" key="MergeDialog" timestamp="1607562858772">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="51" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1607562858772" />
     <state x="277" y="101" key="MultipleFileMergeDialog" timestamp="1606206817796">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="277" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1606206817796" />
-    <state x="326" y="71" key="RollbackChangesDialog" timestamp="1607528276207">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state x="481" y="42" key="RollbackChangesDialog" timestamp="1607578252339">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="481" y="42" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607506038179" />
-    <state x="326" y="71" key="RollbackChangesDialog/33.23.1247.777@33.23.1247.777" timestamp="1607528276207" />
-    <state x="64" y="23" key="SettingsEditor" timestamp="1607525273899">
-      <screen x="33" y="23" width="1247" height="777" />
+    <state x="481" y="42" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607578252339" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1607562915393">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1607503279448" />
-    <state x="64" y="23" key="SettingsEditor/33.23.1247.777@33.23.1247.777" timestamp="1607525273899" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1607562915393" />
     <state x="417" y="37" width="863" height="605" key="SpringBootCustomization" timestamp="1606904342488">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="417" y="37" width="863" height="605" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1606904342488" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607307567053">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607506818207">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607307567053" />
-    <state x="206" y="90" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1607528268443">
-      <screen x="33" y="23" width="1247" height="777" />
-    </state>
-    <state x="206" y="90" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/33.23.1247.777@33.23.1247.777" timestamp="1607528268443" />
-    <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607046214325">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607506818207" />
+    <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607562784209">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1607046214325" />
+    <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1607562784209" />
     <state x="412" y="168" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1606905330740">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -699,10 +719,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="338" y="72" width="676" height="594" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1606976049177" />
-    <state x="28" y="0" key="new project wizard" timestamp="1607505700100">
+    <state x="28" y="0" key="new project wizard" timestamp="1607588781878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="28" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1607505700100" />
+    <state x="28" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1607588781878" />
     <state x="433" y="199" key="scopes" timestamp="1607506397843">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
