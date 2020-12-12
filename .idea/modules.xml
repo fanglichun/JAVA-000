@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Week_06/EB/EB.iml" filepath="$PROJECT_DIR$/Week_06/EB/EB.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/Sharding-Sphere-Atomikos-XA.iml" filepath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/Sharding-Sphere-Atomikos-XA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_08/sharding-Sphere-Atomikos-XA/Sharding-Sphere-Atomikos-XA.iml" filepath="$PROJECT_DIR$/Week_08/sharding-Sphere-Atomikos-XA/Sharding-Sphere-Atomikos-XA.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/dms.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/dms.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/dms1.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/dms1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_05/starter/fanglc-spring-boot-starter.iml" filepath="$PROJECT_DIR$/Week_05/starter/fanglc-spring-boot-starter.iml" />
@@ -13,7 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/Week_06/lambda_stream_guava/lambda_stream_guava.iml" filepath="$PROJECT_DIR$/Week_06/lambda_stream_guava/lambda_stream_guava.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_02/network_io.iml" filepath="$PROJECT_DIR$/Week_02/network_io.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_08/sharding-databases-tables/sharding-databases-tables.iml" filepath="$PROJECT_DIR$/Week_08/sharding-databases-tables/sharding-databases-tables.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/sharding-sphere-xa.iml" filepath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/sharding-sphere-xa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_08/sharding-Sphere-Atomikos-XA/sharding-sphere-xa.iml" filepath="$PROJECT_DIR$/Week_08/sharding-Sphere-Atomikos-XA/sharding-sphere-xa.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_05/test_starter/starter.iml" filepath="$PROJECT_DIR$/Week_05/test_starter/starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/v1.0.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/v1.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/v2.0.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v2.0/v2.0.iml" />

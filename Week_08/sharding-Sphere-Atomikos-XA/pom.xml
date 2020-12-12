@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.flc.ssxa</groupId>
-    <artifactId>Sharding-Sphere-Atomikos-XA</artifactId>
+    <artifactId>sharding-Sphere-Atomikos-XA</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>

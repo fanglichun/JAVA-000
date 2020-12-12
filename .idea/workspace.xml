@@ -8,75 +8,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97a194e6-7790-4492-b4b0-ff50c13ed1f4" name="Default Changelist" comment="第八次课程作业提交-XA。">
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/annotatoin/ResponseResultBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/domain/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/domain/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/dto/GoodsStockDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/dto/OrderDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/enums/ResultStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/mapper/GoodsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/service/GoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/service/IGoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/service/IOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/service/IPaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/service/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/service/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/util/ResponseResultBodyAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/util/ResultException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/vo/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/scheme/eb.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/scheme/good.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/scheme/order.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/scheme/user.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="97a194e6-7790-4492-b4b0-ff50c13ed1f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_05/test_starter/starter.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/ShardingSphereAtomikosXA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/Sharding-Sphere-Atomikos-XA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/ShardingSphereXAApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/controller/OrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/domain/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/domain/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/domain/OrderItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/domain/ShadowUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/mapper/AddressMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/mapper/CommonRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/mapper/OrderItemMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/mapper/OrderMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/mapper/ShadowUserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/service/AtomikosXAService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/service/OrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/service/ShadowUserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/service/ShardingSphereService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/xa/service/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper/AddressMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper/OrderItemMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper/OrderMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper/ShadowUserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/resources/com/flc/xa/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/src/main/java/com/flc/xa/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/src/main/java/com/flc/xa/TransactionConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java/com/flc/ssxa/config/TransactionConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/src/main/java/com/flc/xa/XAOrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/src/main/resources/sharding-databases-tables.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/src/test/java/com/flc/xa/XAOrderServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_08/transaction-2pc-xa/transaction-2pc-xa.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +115,17 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.App">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <extension name="coverage">
@@ -284,6 +228,8 @@
       <workItem from="1607759250977" duration="869000" />
       <workItem from="1607760194496" duration="1598000" />
       <workItem from="1607761946796" duration="5302000" />
+      <workItem from="1607767336157" duration="491000" />
+      <workItem from="1607767923293" duration="398000" />
     </task>
     <task id="LOCAL-00001" summary="导入idea删除无用的文件">
       <created>1602403256486</created>
@@ -467,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607595035970</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="第八次课程作业提交-XA。">
+      <created>1607767457086</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1607767457086</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,10 +561,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="385" y="183" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1605095289740" />
-    <state x="116" y="0" key="CommitChangelistDialog2" timestamp="1607757860288">
+    <state x="116" y="0" key="CommitChangelistDialog2" timestamp="1607767454688">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="116" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607757860288" />
+    <state x="116" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607767454688" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1607765987901">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -632,22 +585,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="512" y="238" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1605522015889" />
-    <state width="1237" height="220" key="GridCell.Tab.0.bottom" timestamp="1607767272644">
+    <state width="1237" height="295" key="GridCell.Tab.0.bottom" timestamp="1607767835632">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="220" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607767272644" />
-    <state width="1237" height="220" key="GridCell.Tab.0.center" timestamp="1607767272643">
+    <state width="1237" height="295" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607767835632" />
+    <state width="1237" height="295" key="GridCell.Tab.0.center" timestamp="1607767835632">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="220" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607767272643" />
-    <state width="1237" height="220" key="GridCell.Tab.0.left" timestamp="1607767272643">
+    <state width="1237" height="295" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607767835632" />
+    <state width="1237" height="295" key="GridCell.Tab.0.left" timestamp="1607767835631">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="220" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607767272643" />
-    <state width="1237" height="220" key="GridCell.Tab.0.right" timestamp="1607767272643">
+    <state width="1237" height="295" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607767835631" />
+    <state width="1237" height="295" key="GridCell.Tab.0.right" timestamp="1607767835632">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="220" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607767272643" />
+    <state width="1237" height="295" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607767835632" />
     <state width="1129" height="171" key="GridCell.Tab.1.bottom" timestamp="1607767272641">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -700,10 +653,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="287" y="44" key="NewModule_or_Project.wizard/0.0.1280.680@0.0.1280.680" timestamp="1607760449502" />
-    <state x="481" y="42" key="RollbackChangesDialog" timestamp="1607578252339">
+    <state x="481" y="42" key="RollbackChangesDialog" timestamp="1607767758143">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="481" y="42" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607578252339" />
+    <state x="481" y="42" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607767758143" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1607767024646">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -712,10 +665,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="417" y="37" width="863" height="605" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1606904342488" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607595037458">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607767460366">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607595037458" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607767460366" />
     <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607562784209">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
