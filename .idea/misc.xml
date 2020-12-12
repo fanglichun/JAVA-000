@@ -13,12 +13,13 @@
         <option value="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v3.0/pom.xml" />
         <option value="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/pom.xml" />
         <option value="$PROJECT_DIR$/Week_08/sharding-databases-tables/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_08/sharding-sphere-xa-payment/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_08/sharding-sphere-xa/pom.xml" />
         <option value="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/pom.xml" />
-        <option value="$PROJECT_DIR$/Week_08/transaction-2pc-xa/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

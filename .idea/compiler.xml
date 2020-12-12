@@ -7,8 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ShardingSphereAtomikosXA" />
         <module name="starter" />
+        <module name="Sharding-Sphere-Atomikos-XA" />
         <module name="v2.0" />
         <module name="network_io" />
         <module name="v3.0" />
@@ -17,10 +17,10 @@
         <module name="v1.0" />
         <module name="dms" />
         <module name="sharding-databases-tables" />
-        <module name="transaction-2pc-xa" />
         <module name="fanglc-spring-boot-starter" />
         <module name="EB" />
         <module name="lambda_stream_guava" />
+        <module name="sharding-sphere-xa" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,6 +33,9 @@
       <module name="lambda_stream_guava" target="8" />
       <module name="network_io" target="8" />
       <module name="sharding-databases-tables" target="1.8" />
+      <module name="Sharding-Sphere-Atomikos-XA" target="8" />
+      <module name="sharding-sphere-xa" target="8" />
+      <module name="sharding-sphere-xa-payment" target="1.8" />
       <module name="ShardingSphereAtomikosXA" target="1.8" />
       <module name="starter" target="1.8" />
       <module name="transaction-2pc-xa" target="1.8" />
@@ -43,11 +46,14 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Sharding-Sphere-Atomikos-XA" options="-parameters" />
       <module name="ShardingSphereAtomikosXA" options="-parameters" />
       <module name="dms1" options="-parameters" />
       <module name="http_demo" options="-parameters" />
       <module name="network_io" options="" />
       <module name="sharding-databases-tables" options="-parameters" />
+      <module name="sharding-sphere-xa" options="-parameters" />
+      <module name="sharding-sphere-xa-payment" options="-parameters" />
       <module name="starter" options="-parameters" />
       <module name="v1.0" options="-parameters" />
       <module name="v2.0" options="-parameters" />

@@ -12,8 +12,11 @@
       <sourceFolder url="file://$MODULE_DIR$/Week_02/sc/main/resource" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/Week_04/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Week_05/test_starter/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Week_08/ShardingSphereAtomikosXA/src/main/java" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.5.17.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.4.0" level="project" />
   </component>
 </module>
