@@ -33,4 +33,7 @@ Week09 作业题目（周六）：
 整合 Dubbo+Sentinel，实现限流功能 ;
 整合 Dubbo 与 Skywalking，实现全链路性能监控。
 
+作业参考示例地址，由秦老师和助教共建，每周同步更新：
+https://github.com/JavaCourse00/JavaCourseCodes
+
 作业暂时没做。
