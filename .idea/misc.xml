@@ -16,6 +16,10 @@
         <option value="$PROJECT_DIR$/Week_08/sharding-sphere-xa-payment/pom.xml" />
         <option value="$PROJECT_DIR$/Week_08/sharding-sphere-xa/pom.xml" />
         <option value="$PROJECT_DIR$/Week_08/ShardingSphereAtomikosXA/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_09/rpc01/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_09/rpc02/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_09/dubbo-hmily-tcc/pom.xml" />
+        <option value="$PROJECT_DIR$/Week_09/hmily-tcc-dubbo/pom.xml" />
       </list>
     </option>
   </component>

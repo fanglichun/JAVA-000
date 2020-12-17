@@ -8,7 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="starter" />
-        <module name="Sharding-Sphere-Atomikos-XA" />
+        <module name="rpcfx-demo-provider" />
         <module name="v2.0" />
         <module name="network_io" />
         <module name="v3.0" />
@@ -16,7 +16,15 @@
         <module name="jdbc" />
         <module name="v1.0" />
         <module name="dms" />
+        <module name="dubbo-demo-provider" />
+        <module name="hmily-tcc-dubbo" />
+        <module name="rpcfx-demo-consumer" />
+        <module name="dubbo-demo-api" />
         <module name="sharding-databases-tables" />
+        <module name="dubbo-demo-consumer" />
+        <module name="rpcfx-core" />
+        <module name="rpcfx-demo-api" />
+        <module name="dubbo-hmily-tcc" />
         <module name="fanglc-spring-boot-starter" />
         <module name="EB" />
         <module name="lambda_stream_guava" />
@@ -26,12 +34,23 @@
     <bytecodeTargetLevel>
       <module name="dms" target="8" />
       <module name="dms1" target="1.8" />
+      <module name="dubbo-demo" target="1.8" />
+      <module name="dubbo-demo-api" target="1.8" />
+      <module name="dubbo-demo-consumer" target="8" />
+      <module name="dubbo-demo-provider" target="8" />
+      <module name="dubbo-hmily-tcc" target="1.8" />
       <module name="EB" target="1.5" />
       <module name="fanglc-spring-boot-starter" target="1.5" />
+      <module name="hmily-tcc-dubbo" target="1.8" />
       <module name="http_demo" target="1.8" />
       <module name="jdbc" target="1.5" />
       <module name="lambda_stream_guava" target="8" />
       <module name="network_io" target="8" />
+      <module name="rpcfx" target="1.8" />
+      <module name="rpcfx-core" target="1.8" />
+      <module name="rpcfx-demo-api" target="1.8" />
+      <module name="rpcfx-demo-consumer" target="8" />
+      <module name="rpcfx-demo-provider" target="8" />
       <module name="sharding-databases-tables" target="1.8" />
       <module name="Sharding-Sphere-Atomikos-XA" target="8" />
       <module name="sharding-sphere-xa" target="8" />
@@ -49,8 +68,17 @@
       <module name="Sharding-Sphere-Atomikos-XA" options="-parameters" />
       <module name="ShardingSphereAtomikosXA" options="-parameters" />
       <module name="dms1" options="-parameters" />
+      <module name="dubbo-demo-api" options="-parameters" />
+      <module name="dubbo-demo-consumer" options="-parameters" />
+      <module name="dubbo-demo-provider" options="-parameters" />
+      <module name="dubbo-hmily-tcc" options="-parameters" />
+      <module name="hmily-tcc-dubbo" options="-parameters" />
       <module name="http_demo" options="-parameters" />
       <module name="network_io" options="" />
+      <module name="rpcfx-core" options="-parameters" />
+      <module name="rpcfx-demo-api" options="-parameters" />
+      <module name="rpcfx-demo-consumer" options="-parameters" />
+      <module name="rpcfx-demo-provider" options="-parameters" />
       <module name="sharding-databases-tables" options="-parameters" />
       <module name="sharding-sphere-xa" options="-parameters" />
       <module name="sharding-sphere-xa-payment" options="-parameters" />

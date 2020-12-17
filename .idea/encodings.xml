@@ -13,5 +13,13 @@
     <file url="file://$PROJECT_DIR$/Week_08/sharding-Sphere-Atomikos-XA/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Week_08/sharding-Sphere-Atomikos-XA/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Week_08/sharding-databases-tables/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Week_09/hmily-tcc-dubbo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Week_09/rpc01/rpcfx-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Week_09/rpc01/rpcfx-demo-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Week_09/rpc01/rpcfx-demo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Week_09/rpc01/rpcfx-demo-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Week_09/rpc02/dubbo-demo-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Week_09/rpc02/dubbo-demo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Week_09/rpc02/dubbo-demo-provider/src/main/java" charset="UTF-8" />
   </component>
 </project>
