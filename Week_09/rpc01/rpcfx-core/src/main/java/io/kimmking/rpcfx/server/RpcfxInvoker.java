@@ -2,6 +2,7 @@ package io.kimmking.rpcfx.server;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import io.kimmking.rpcfx.api.RpcfxException;
 import io.kimmking.rpcfx.api.RpcfxRequest;
 import io.kimmking.rpcfx.api.RpcfxResolver;
 import io.kimmking.rpcfx.api.RpcfxResponse;
@@ -38,8 +39,7 @@ public class RpcfxInvoker {
 
             // 2.封装一个统一的RpcfxException
             // 客户端也需要判断异常
-            e.printStackTrace();
-            response.setException(e);
+            response.setException(RpcfxException.builder().errorCode("404").errorMsg(String.format("请求服务{%s}通讯异常,请稍后再试!!!", service)).build());
             response.setStatus(false);
             return response;
         }
