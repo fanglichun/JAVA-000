@@ -8,14 +8,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97a194e6-7790-4492-b4b0-ff50c13ed1f4" name="Default Changelist" comment="第9次课程作业提交-hmily-tcc-dubbo">
-      <change afterPath="$PROJECT_DIR$/Week_01/main/java/com/flc/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_01/main/java/com/flc/classloader/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_01/main/java/com/flc/classloader/impl/Log4j.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_01/main/java/com/flc/classloader/impl/Logback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_01/resources/META-INF/services/com.flc.classloader.Log" afterDir="false" />
+    <list default="true" id="97a194e6-7790-4492-b4b0-ff50c13ed1f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Week_12/192.168.28.128/master-6379/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_12/192.168.28.128/slave-6380/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_12/192.168.28.129/master-6379/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_12/192.168.28.129/slave-6380/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_12/192.168.28.130/master-6379/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_12/192.168.28.130/slave-6380/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_12/开启所有会话操作.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_12/虚拟机安装三个虚拟机节点.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_05/test_starter/src/test/java/com/flc/starter/StarterApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week_12/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Week_12/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +78,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java/hmily/hmily-tcc-dubbo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week_12/192.168.28.130/slave-6380" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -84,12 +87,8 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-sphere-xa\src\main\resources\mapper" />
-      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-sphere-xa\src\main\resources" />
-      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-sphere-xa-payment\src\main\resources" />
-      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-databases-tables\src\main\resources\com\flc\dms\mapper" />
-      <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v2.0\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.flc.xa.util" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -97,11 +96,11 @@
       <recent name="com.flc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java_training_camp\JAVA-000\Week_09" />
-      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-sphere-xa\src\main\java\com\flc\ssxa" />
-      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-sphere-xa\src\main\java\com\flc\ssxa\util" />
-      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-sphere-xa\src\main\resources\scheme" />
-      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-sphere-xa\src\main\resources" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_12\192.168.28.130\slave-6380" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_12\192.168.28.130\master-6379" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_12\192.168.28.129\slave-6380" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_12\192.168.28.129\master-6379" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_12\192.168.28.128\slave-6380" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.flc.jvm" />
@@ -110,8 +109,12 @@
       <recent name="com.flc.xa.vo" />
       <recent name="com.flc.xa.config" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.flc.xa.util" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-sphere-xa\src\main\resources\mapper" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-sphere-xa\src\main\resources" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-sphere-xa-payment\src\main\resources" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_08\sharding-databases-tables\src\main\resources\com\flc\dms\mapper" />
+      <recent name="D:\java_training_camp\JAVA-000\Week_07\DatabaseMasterSlave\v2.0\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -247,13 +250,13 @@
       <item itemvalue="Application.Main5" />
       <item itemvalue="Application.Main6" />
       <item itemvalue="Application.Test" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Spring Boot.DynamicDataSourceApplication" />
       <item itemvalue="Spring Boot.ShardingMasterSlaveApplication" />
       <item itemvalue="Spring Boot.DubboClientApplication" />
       <item itemvalue="Spring Boot.RpcfxClientApplication" />
       <item itemvalue="Spring Boot.RpcfxServerApplication" />
       <item itemvalue="Spring Boot.DubboServerApplication" />
-      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
@@ -341,7 +344,11 @@
       <workItem from="1608601183889" duration="5107000" />
       <workItem from="1608607704184" duration="2437000" />
       <workItem from="1609207786060" duration="1319000" />
-      <workItem from="1609229742243" duration="1901000" />
+      <workItem from="1609229742243" duration="2603000" />
+      <workItem from="1609291724966" duration="622000" />
+      <workItem from="1609308435313" duration="4000" />
+      <workItem from="1609732390305" duration="885000" />
+      <workItem from="1610446846126" duration="6710000" />
     </task>
     <task id="LOCAL-00001" summary="导入idea删除无用的文件">
       <created>1602403256486</created>
@@ -546,11 +553,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608194207927</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="添加jdk classloader demo">
+      <created>1609231724402</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1609231724402</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -625,7 +642,8 @@
     <MESSAGE value="第八次课程作业提交。" />
     <MESSAGE value="第八次课程作业提交-XA。" />
     <MESSAGE value="第9次课程作业提交-hmily-tcc-dubbo" />
-    <option name="LAST_COMMIT_MESSAGE" value="第9次课程作业提交-hmily-tcc-dubbo" />
+    <MESSAGE value="添加jdk classloader demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加jdk classloader demo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1607756016975">
@@ -644,10 +662,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1608190879265" />
-    <state x="386" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607593952465">
+    <state x="386" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610504374310">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="386" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1607593952465" />
+    <state x="386" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1610504374310" />
     <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1609229927012">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -688,18 +706,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="385" y="183" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1605095289740" />
-    <state x="116" y="0" key="CommitChangelistDialog2" timestamp="1608194206555">
+    <state x="116" y="0" key="CommitChangelistDialog2" timestamp="1609231723759">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="116" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1608194206555" />
+    <state x="116" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1609231723759" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1609231532194">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="507" height="466" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1609231532194" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1607757859267">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1609231685745">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1607757859267" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1609231685745" />
     <state x="400" y="95" key="FileChooserDialogImpl" timestamp="1608192336301">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -712,38 +730,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="512" y="238" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1605522015889" />
-    <state width="1237" height="242" key="GridCell.Tab.0.bottom" timestamp="1609231367715">
+    <state width="782" height="51" key="GridCell.Tab.0.bottom" timestamp="1609291664017">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="242" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1609231367715" />
-    <state width="1237" height="242" key="GridCell.Tab.0.center" timestamp="1609231367715">
+    <state width="782" height="51" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1609291664017" />
+    <state width="782" height="51" key="GridCell.Tab.0.center" timestamp="1609291664016">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="242" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1609231367715" />
-    <state width="1237" height="242" key="GridCell.Tab.0.left" timestamp="1609231367715">
+    <state width="782" height="51" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1609291664016" />
+    <state width="782" height="51" key="GridCell.Tab.0.left" timestamp="1609291664016">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="242" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1609231367715" />
-    <state width="1237" height="242" key="GridCell.Tab.0.right" timestamp="1609231367715">
+    <state width="782" height="51" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1609291664016" />
+    <state width="782" height="51" key="GridCell.Tab.0.right" timestamp="1609291664017">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="242" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1609231367715" />
-    <state width="1237" height="188" key="GridCell.Tab.1.bottom" timestamp="1609231365897">
+    <state width="782" height="51" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1609291664017" />
+    <state width="782" height="51" key="GridCell.Tab.1.bottom" timestamp="1609291664017">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="188" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1609231365897" />
-    <state width="1237" height="188" key="GridCell.Tab.1.center" timestamp="1609231365897">
+    <state width="782" height="51" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1609291664017" />
+    <state width="782" height="51" key="GridCell.Tab.1.center" timestamp="1609291664017">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="188" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1609231365897" />
-    <state width="1237" height="188" key="GridCell.Tab.1.left" timestamp="1609231365897">
+    <state width="782" height="51" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1609291664017" />
+    <state width="782" height="51" key="GridCell.Tab.1.left" timestamp="1609291664017">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="188" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1609231365897" />
-    <state width="1237" height="188" key="GridCell.Tab.1.right" timestamp="1609231365897">
+    <state width="782" height="51" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1609291664017" />
+    <state width="782" height="51" key="GridCell.Tab.1.right" timestamp="1609291664017">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="188" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1609231365897" />
+    <state width="782" height="51" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1609291664017" />
     <state width="1009" height="219" key="GridCell.Tab.2.bottom" timestamp="1608537277116">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -780,10 +798,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="287" y="44" key="NewModule_or_Project.wizard/0.0.1280.680@0.0.1280.680" timestamp="1607760449502" />
-    <state x="481" y="42" key="RollbackChangesDialog" timestamp="1607767758143">
+    <state x="481" y="42" key="RollbackChangesDialog" timestamp="1609231692893">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="481" y="42" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607767758143" />
+    <state x="481" y="42" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1609231692893" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1608601132630">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -792,14 +810,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="417" y="37" width="863" height="605" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1606904342488" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608194209743">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1609231725673">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608194209743" />
-    <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608616170253">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1609231725673" />
+    <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610446854826">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1608616170253" />
+    <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1610446854825" />
     <state x="412" y="168" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1609229920770">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -820,10 +838,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="433" y="199" key="scopes/0.0.1280.680@0.0.1280.680" timestamp="1607506397843" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1609230598229">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1610505449655">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1609230598229" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1610505449655" />
     <state x="321" y="23" key="spring file set editor" timestamp="1607060901717">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
