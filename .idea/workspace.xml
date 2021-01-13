@@ -8,17 +8,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97a194e6-7790-4492-b4b0-ff50c13ed1f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week_12/192.168.28.128/master-6379/redis.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_12/192.168.28.128/slave-6380/redis.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_12/192.168.28.129/master-6379/redis.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_12/192.168.28.129/slave-6380/redis.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_12/192.168.28.130/master-6379/redis.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_12/192.168.28.130/slave-6380/redis.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_12/开启所有会话操作.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week_12/虚拟机安装三个虚拟机节点.png" afterDir="false" />
+    <list default="true" id="97a194e6-7790-4492-b4b0-ff50c13ed1f4" name="Default Changelist" comment="配置redis的主从复制，sentinel高可用，Cluster集群">
+      <change afterPath="$PROJECT_DIR$/Week_07/homework.md.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_08/homework.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_09/homework.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_11/homework.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_12/homework.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_13/homework.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_12/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Week_12/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +33,11 @@
         <option value="Interface" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
+  <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -66,6 +65,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -77,6 +77,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Week_12/192.168.28.130/slave-6380" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -348,7 +349,7 @@
       <workItem from="1609291724966" duration="622000" />
       <workItem from="1609308435313" duration="4000" />
       <workItem from="1609732390305" duration="885000" />
-      <workItem from="1610446846126" duration="6710000" />
+      <workItem from="1610446846126" duration="7925000" />
     </task>
     <task id="LOCAL-00001" summary="导入idea删除无用的文件">
       <created>1602403256486</created>
@@ -560,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609231724402</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="配置redis的主从复制，sentinel高可用，Cluster集群">
+      <created>1610507090607</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1610507090607</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +651,8 @@
     <MESSAGE value="第八次课程作业提交-XA。" />
     <MESSAGE value="第9次课程作业提交-hmily-tcc-dubbo" />
     <MESSAGE value="添加jdk classloader demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加jdk classloader demo" />
+    <MESSAGE value="配置redis的主从复制，sentinel高可用，Cluster集群" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置redis的主从复制，sentinel高可用，Cluster集群" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1607756016975">
@@ -662,10 +671,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1608190879265" />
-    <state x="386" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610504374310">
+    <state x="386" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610508059311">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="386" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1610504374310" />
+    <state x="386" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1610508059311" />
     <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1609229927012">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -706,10 +715,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="385" y="183" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1605095289740" />
-    <state x="116" y="0" key="CommitChangelistDialog2" timestamp="1609231723759">
+    <state x="116" y="0" key="CommitChangelistDialog2" timestamp="1610507778786">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="116" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1609231723759" />
+    <state x="116" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1610507778786" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1609231532194">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -810,10 +819,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="417" y="37" width="863" height="605" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1606904342488" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1609231725673">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1610507092066">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1609231725673" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1610507092066" />
     <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610446854826">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
