@@ -9,9 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97a194e6-7790-4492-b4b0-ff50c13ed1f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Week_13/spring-boot-kafka-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week_13/spring-boot-kafka-demo/spring-boot-kafka-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_12/开启所有会话操作.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week_12/虚拟机安装三个虚拟机节点.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Week_13/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Week_13/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,6 +225,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JdbcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="jdbc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flc.jdbc.JdbcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RpcfxClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="rpcfx-demo-consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.kimmking.rpcfx.demo.consumer.RpcfxClientApplication" />
@@ -243,6 +253,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StarterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flc.starter.StarterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main2" />
       <item itemvalue="Application.Main5" />
@@ -255,6 +272,8 @@
       <item itemvalue="Spring Boot.RpcfxClientApplication" />
       <item itemvalue="Spring Boot.RpcfxServerApplication" />
       <item itemvalue="Spring Boot.DubboServerApplication" />
+      <item itemvalue="Spring Boot.StarterApplication" />
+      <item itemvalue="Spring Boot.JdbcApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -346,7 +365,7 @@
       <workItem from="1609291724966" duration="622000" />
       <workItem from="1609308435313" duration="4000" />
       <workItem from="1609732390305" duration="885000" />
-      <workItem from="1610446846126" duration="19974000" />
+      <workItem from="1610446846126" duration="23113000" />
     </task>
     <task id="LOCAL-00001" summary="导入idea删除无用的文件">
       <created>1602403256486</created>
@@ -579,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610508373654</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="3节点Kafka集群搭建步骤.">
+      <created>1610615050344</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1610615050344</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +691,8 @@
     <MESSAGE value="配置redis的主从复制，sentinel高可用，Cluster集群" />
     <MESSAGE value="添加作业题目。" />
     <MESSAGE value="消息中间件作业暂时没做。" />
-    <option name="LAST_COMMIT_MESSAGE" value="消息中间件作业暂时没做。" />
+    <MESSAGE value="3节点Kafka集群搭建步骤." />
+    <option name="LAST_COMMIT_MESSAGE" value="3节点Kafka集群搭建步骤." />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1607756016975">
@@ -728,18 +755,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="385" y="183" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1605095289740" />
-    <state x="116" y="0" key="CommitChangelistDialog2" timestamp="1610508373010">
+    <state x="116" y="0" key="CommitChangelistDialog2" timestamp="1610615049604">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="116" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1610508373010" />
+    <state x="116" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1610615049604" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1609231532194">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="507" height="466" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1609231532194" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1609231685745">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1610615043762">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1609231685745" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1610615043762" />
     <state x="400" y="95" key="FileChooserDialogImpl" timestamp="1610508741827">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -832,10 +859,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="417" y="37" width="863" height="605" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1606904342488" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1610508374619">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1610615051898">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1610508374619" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1610615051898" />
     <state x="448" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610446854826">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -852,18 +879,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="338" y="72" width="676" height="594" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1606976049177" />
-    <state x="28" y="0" key="new project wizard" timestamp="1608619605246">
+    <state x="28" y="0" key="new project wizard" timestamp="1610615309797">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="28" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1608619605246" />
+    <state x="28" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1610615309797" />
     <state x="433" y="199" key="scopes" timestamp="1607506397843">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="433" y="199" key="scopes/0.0.1280.680@0.0.1280.680" timestamp="1607506397843" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1610505449655">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1610615574146">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1610505449655" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1610615574146" />
     <state x="321" y="23" key="spring file set editor" timestamp="1607060901717">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

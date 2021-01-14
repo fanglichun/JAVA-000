@@ -1,12 +1,17 @@
 ####1.（必做）搭建一个 3 节点 Kafka 集群，测试功能和性能；实现 spring kafka 下对 kafka 集群的操作，将代码提交到 github。
+虚拟机VMware® Workstation 16 Pro(VMware-16.0.0 build-16894299)上安装了三个centos7的节点，IP地址分别为：
+192.168.28.128、192.168.28.129、192.168.28.130。
+利用xshell访问三个centos节点，启动发送键盘到所有会话  ，即可同时对三个节点进行操作。
+
+
 #####zookeeper集群安装
-#######下载zookeeper安装包:
+######下载zookeeper安装包:
 ```
 cd /usr/opt
 wget https://mirrors.tuna.tsinghua.edu.cn/apache/zookeeper/stable/apache-zookeeper-3.5.8.tar.gz
 tar xf apache-zookeeper-3.5.8-bin.tar.gz -C /usr/local
 ```
-#######配置zookeeper:
+######配置zookeeper:
 ```
 cd /usr/local
 #软链接
@@ -44,7 +49,7 @@ echo "3" > /data/zookeeper/data/data/myid
 cd /usr/local/zookeeper/bin && ./zkServer.sh start
 tail /usr/local/zookeeper/logs/zookeeper-root-server-localhost.localdomain.out
 ```
-#######验证zookeeper集群访问:
+######验证zookeeper集群访问:
 ```
 分别在在192.168.28.128~130上执行：
 netstat -nlpt | grep -E "2181|2888|3888"
@@ -54,13 +59,13 @@ netstat -nlpt | grep -E "2181|2888|3888"
 ./zkCli.sh  -server 192.168.28.130:2181
 ```
 #####kafka集群安装
-#######下载kafka安装包:
+######下载kafka安装包:
 ```
 cd /usr/opt
 wget https://mirror.bit.edu.cn/apache/kafka/2.7.0/kafka_2.13-2.7.0.tgz
 tar xf kafka_2.13-2.7.0.tgz -C /usr/local
 ```
-#######配置kafka集群:
+######配置kafka集群:
 ```
 cd /usr/local
 ln -sv kafka_2.13-2.7.0 kafka
@@ -95,7 +100,7 @@ listeners=PLAINTEXT://192.168.28.129:9092  #修改为本机地址
 broker.id=3
 listeners=PLAINTEXT://192.168.28.130:9092  #修改为本机地址
 ```
-#######启动kafka集群:
+######启动kafka集群:
 ```
 ./bin/kafka-server-start.sh -daemon  config/server.properties
 启动报错：
@@ -112,7 +117,7 @@ kafka.zookeeper.ZooKeeperClientTimeoutException: Timed out waiting for connectio
 	at kafka.Kafka.main(Kafka.scala)
 原因：zookeeper.connection.timeout.ms的值太短了，调大了server.properties文件里的超时时间就可以了
 ```
-#######登录zookeeper验证,验证服务是否正常
+######登录zookeeper验证,验证服务是否正常
 ```
 cd /usr/local/zookeeper/bin
 ./zkCli.sh -server 192.168.28.128
@@ -132,9 +137,15 @@ get  /brokers/ids/3
 
 ```
 ```
-#######创建topic验证,验证服务是否正常
+######创建topic验证,验证服务是否正常
 ```
 ./kafka-topics.sh --create --zookeeper 192.168.28.128:2181 --replication-factor 1 --partitions 1 --topic love
+创建主题报错：
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+Error while executing topic command : Replication factor: 1 larger than available brokers: 0.
+[2021-01-10 15:17:45,154] ERROR org.apache.kafka.common.errors.InvalidReplicationFactorException: Replication factor: 1 larger than available brokers: 0.
+ (kafka.admin.TopicCommand$)
+原因：kafka集群中的两个节点服务因为连接zookeeper集群服务超时导致服务没有变动起来。
 --创建主题
 ./kafka-topics.sh --create --zookeeper 192.168.28.128:2181 --replication-factor 1 --partitions 1 --topic love
 --生产者给该主题发了个消息
@@ -144,3 +155,4 @@ get  /brokers/ids/3
 --消费者收到了消息
 ./kafka-console-consumer.sh --bootstrap-server 192.168.28.130:9092 --topic love --from-beginning
 ```
+[参考手册](https://www.cnblogs.com/panwenbin-logs/p/10369402.html)

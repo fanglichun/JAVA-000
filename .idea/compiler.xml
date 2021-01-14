@@ -19,6 +19,7 @@
         <module name="dubbo-demo-provider" />
         <module name="hmily-tcc-dubbo" />
         <module name="rpcfx-demo-consumer" />
+        <module name="spring-boot-kafka-demo" />
         <module name="dubbo-demo-api" />
         <module name="sharding-databases-tables" />
         <module name="dubbo-demo-consumer" />
@@ -56,6 +57,7 @@
       <module name="sharding-sphere-xa" target="8" />
       <module name="sharding-sphere-xa-payment" target="1.8" />
       <module name="ShardingSphereAtomikosXA" target="1.8" />
+      <module name="spring-boot-kafka-demo" target="1.5" />
       <module name="starter" target="1.8" />
       <module name="transaction-2pc-xa" target="1.8" />
       <module name="v1.0" target="1.5" />
