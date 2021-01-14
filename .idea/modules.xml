@@ -23,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/Week_09/rpc01/rpcfx-demo-provider/rpcfx-demo-provider.iml" filepath="$PROJECT_DIR$/Week_09/rpc01/rpcfx-demo-provider/rpcfx-demo-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_08/sharding-databases-tables/sharding-databases-tables.iml" filepath="$PROJECT_DIR$/Week_08/sharding-databases-tables/sharding-databases-tables.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_08/sharding-Sphere-Atomikos-XA/sharding-sphere-xa.iml" filepath="$PROJECT_DIR$/Week_08/sharding-Sphere-Atomikos-XA/sharding-sphere-xa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_13/spring-boot-activemq-demo/spring-boot-activemq-demo.iml" filepath="$PROJECT_DIR$/Week_13/spring-boot-activemq-demo/spring-boot-activemq-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_13/spring-boot-kafka-demo/spring-boot-kafka-demo.iml" filepath="$PROJECT_DIR$/Week_13/spring-boot-kafka-demo/spring-boot-kafka-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_05/test_starter/starter.iml" filepath="$PROJECT_DIR$/Week_05/test_starter/starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/v1.0.iml" filepath="$PROJECT_DIR$/Week_07/DatabaseMasterSlave/v1.0/v1.0.iml" />
